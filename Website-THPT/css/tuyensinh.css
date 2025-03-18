@@ -1,0 +1,898 @@
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .mautrang {
+            color: white;
+        }
+        
+        .indam {
+            font-weight: bold;
+        }
+        
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+        
+        .flex img {
+            height: 100%;
+        }
+        
+        .flex p {
+            margin: 0px;
+        }
+        
+        .top-nav {
+            position: relative;
+            background-color: orange;
+            display: flex;
+            justify-content: end;
+            border-bottom: 1px solid white;
+        }
+        
+        .top-nav_logo {
+            position: absolute;
+            left: 0px;
+        }
+        
+        .top-nav_lienhe {
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .lien-he_thong-tin {
+            margin-right: 100px;
+        }
+        
+        .thong-tin_sdt {
+            padding-left: 5px;
+        }
+        
+        .thong-tin_lien-he {
+            padding-left: 20px;
+        }
+        
+        .thong-tin_lien-he:hover {
+            color: grey;
+        }
+        
+        .thong-tin_dang-ky {
+            padding-left: 20px;
+        }
+        
+        .thong-tin_dang-ky:hover {
+            color: grey;
+        }
+        
+        .lien-he_timkiem {
+            margin-right: 20px;
+            float: right;
+        }
+        
+        .lien-he_inp-tim-kiem {
+            border: none;
+            background-color: navajowhite;
+            height: 40px;
+            border-radius: 15px 0px 0px 15px;
+            width: 250px;
+        }
+        
+        .lien-he_btn-tim-kiem {
+            border: none;
+            background-color: transparent;
+            font-size: 17px;
+        }
+        
+        .lien-he_btn-tim-kiem:hover {
+            color: grey;
+            cursor: pointer;
+        }
+        
+        .menu {
+            display: flex;
+            background-color: orange;
+            justify-content: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 250px;
+        }
+        
+        .menu_link {
+            padding: 0px 20px;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .menu_link:hover {
+            color: grey;
+        }
+        
+        hr {
+            width: 100%;
+            border: 0;
+            border-top: 1px solid white;
+        }
+        
+        header {
+            background-image: url(../images/hinhanh1.png);
+            padding-bottom: 20%;
+            background-size: 100% 100%;
+            margin-top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .header-title {
+            font-size: 40px;
+            color: white;
+            font-family: Arial, sans-serif;
+            position: absolute;
+            top: 30%;
+            transform: translateY(-50%);
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 178, 36, 0.3);
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .header-title {
+            z-index: 2;
+        }
+        
+        aside {
+            width: 25%;
+            background-color: rgb(214, 216, 215);
+            padding: 20px;
+        }
+        
+        .procedure-info {
+            display: none;
+        }
+        
+        footer {
+            display: flex;
+            background-color: #FF8F0D;
+            justify-content: space-between;
+        }
+        
+        .thong-tin {
+            width: 33%;
+            padding: 20px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .thong-tin p {
+            font-weight: bold;
+            font-size: 13px;
+        }
+        
+        .thong-tin img {
+            margin-left: 30px;
+        }
+        
+        .fanpage {
+            margin-top: 40px;
+            margin-right: 20px;
+        }
+        
+        .lien-he {
+            width: 33%;
+        }
+        
+        .lien-he p {
+            margin-left: 3.53333%;
+        }
+        
+        .lien-he1 i {
+            margin-right: 5px;
+        }
+        /*tabs trang web*/
+        
+        .tabs {
+            padding: 10px;
+            color: rgb(84, 82, 82);
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        
+        .tabs ul {
+            list-style: none;
+        }
+        
+        .tabs ul li {
+            display: inline-block;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .columns {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-gap: 20px;
+        }
+        
+        .content {
+            margin-bottom: 50px;
+        }
+        
+        .content .main-content {
+            flex: 1;
+        }
+        
+        .content .sidebar {
+            flex: 0 0 100%;
+        }
+        
+        .main-content .sidebar {
+            padding: 20px;
+        }
+        
+        .sidebar {
+            margin-top: 30px;
+            margin-right: 20px;
+        }
+        
+        .sidebar a {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            margin-top: 5px;
+            display: flex;
+        }
+        
+        .danh-muc {
+            margin-bottom: 10px;
+            margin-left: 50px;
+            width: 80%;
+            border-bottom: 1px solid gray;
+        }
+        
+        input[type="checkbox"] {
+            display: none;
+        }
+        
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            display: block;
+            margin: 10px 0;
+        }
+        
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        
+        input[type="checkbox"]:checked+label+.dropdown-content {
+            display: block;
+        }
+        
+        .danh-muc i {
+            color: gray;
+            font-size: 15px;
+        }
+        
+        .title-1 {
+            text-align: center;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif, ;
+        }
+        
+        .content p {
+            font-size: 15px;
+            color: rgb(63, 61, 61);
+            margin: 0 0 10px;
+        }
+        
+        .content h5 {
+            font-style: italic;
+            font-weight: bold;
+        }
+        /* Giới thiệu */
+        
+        .gioithieu-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            padding: 0;
+            gap: 0;
+            height: 361px;
+        }
+        
+        .image-gioithieu,
+        .text-gioithieu {
+            flex: 1;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .image-gioithieu img {
+            max-width: 100%;
+            max-height: auto;
+        }
+        
+        .text-gioithieu {
+            padding: 20px;
+            background-color: rgb(255, 145, 48);
+            font-size: 18px;
+            color: white;
+            overflow: auto;
+            height: 377px;
+        }
+        /* Phát triển để trưởng thành*/
+        
+        .danh-sach2 {
+            width: 100%;
+            height: 600px;
+        }
+        
+        .ccdt {
+            width: 100%;
+            height: 530px;
+            margin-bottom: 2%;
+        }
+        
+        .tieu-de2 {
+            margin-top: 5%;
+            position: absolute;
+            color: #fff;
+            margin-left: 30%;
+            margin-bottom: 5%;
+        }
+        
+        .phu-de2 {
+            position: absolute;
+            color: #fff;
+            margin-top: 10%;
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+        }
+        
+        .tieu-de {
+            height: 50px;
+        }
+        
+        .tieu-de .tieu-de2 {
+            height: 50px;
+            align-items: center;
+        }
+        
+        .noi-dung {
+            position: absolute;
+            width: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            margin-left: 5%;
+        }
+        
+        .new-content {
+            padding: 10px;
+            max-width: 500px;
+            height: 150px;
+            margin-top: 38%;
+            margin-left: 10%;
+            display: flex;
+            margin-right: 10%;
+        }
+        
+        .new-content1 {
+            padding: 10px;
+            max-width: 500px;
+            height: 200px;
+            margin-top: 5%;
+            margin-left: 10%;
+            display: flex;
+            margin-right: 10%;
+        }
+        
+        .icon {
+            font-size: 40px;
+            color: #00b33c;
+            margin-right: 20px;
+        }
+        
+        .content-nd h2 {
+            font-size: 36px;
+            color: #00b33c;
+            margin: 0;
+        }
+        
+        .content-nd p {
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0;
+            float: left;
+        }
+        
+        .background {
+            background-image: url('../images/hinh-form-dang-ky.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        .form-dangky {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 400px;
+            padding: 20px;
+            background-color: hsl(36, 100%, 50%);
+            border-radius: 8px;
+            margin-right: 30px;
+        }
+        
+        .form-dangky h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-dangky input[type="text"],
+        .form-dangky input[type="email"],
+        .form-dangky button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        input:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: initial;
+        }
+        
+        .form-dangky .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .form-dangky .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+        }
+        
+        .form-dangky button {
+            background-color: hsl(0, 0%, 100%);
+            color: rgb(255, 134, 42);
+        }
+        
+        .form-dangky button:hover {
+            background-color: #ddd2d2;
+        }
+        
+        .lua-chon {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .lua-chon input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #eee;
+            border: 1px solid gray;
+        }
+        
+        .lua-chon:hover input~.checkmark {
+            background-color: #ccc;
+        }
+        
+        .lua-chon input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+        
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        
+        .lua-chon input:checked~.checkmark:after {
+            display: block;
+        }
+        
+        .lua-chon .checkmark:after {
+            left: 6px;
+            top: 3px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        
+        @media (min-width:1199) {
+            .top-nav_lienhe {
+                display: inline-block;
+            }
+            .lien-he_btn-tim-kiem {
+                font-size: 0.8rem;
+            }
+            .lien-he_thong-tin {
+                margin-right: 2rem;
+            }
+            .lien-he_timkiem {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .menu {
+                padding-left: 0px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .header-title {
+                font-size: 1.5em;
+            }
+            .sidebar iframe {
+                width: 100%;
+                height: auto;
+            }
+            .columns {
+                padding: 20px;
+            }
+            .gioithieu-container {
+                display: block;
+                flex-direction: row;
+                height: auto;
+            }
+            .gioithieu-container .image-gioithieu img {
+                width: 100%;
+                max-height: 100px;
+            }
+            .text-gioithieu {
+                overflow-wrap: break-word;
+                font-size: 1rem;
+            }
+            .danh-sach2 .tieu-de2 {
+                height: auto;
+                margin-left: 15%;
+            }
+            footer {
+                display: flex;
+                flex-direction: column;
+                background-color: #FF8F0D;
+                align-items: center;
+            }
+            .thong-tin,
+            .fanpage {
+                width: 80%;
+                padding: 10px;
+                text-align: center;
+            }
+            .fanpage {
+                margin-top: 20px;
+            }
+            .fanpage iframe {
+                border-radius: 10px;
+            }
+            .lien-he {
+                display: flex;
+                justify-content: space-around;
+                width: fit-content;
+                margin: 0 5%;
+            }
+            .lien-he>.lien-he1 {
+                width: 33%;
+            }
+        }
+        
+        @media(max-width: 1199px) and (min-width: 768px) {
+            .top-nav_lienhe {
+                display: inline-block;
+            }
+            .lien-he_btn-tim-kiem {
+                font-size: 0.8rem;
+            }
+            .lien-he_thong-tin {
+                margin-right: 2rem;
+            }
+            .lien-he_timkiem {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .menu {
+                padding-left: 0px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .header-title {
+                font-size: 1.5em;
+            }
+            .sidebar iframe {
+                width: 100%;
+                height: auto;
+            }
+            .columns {
+                padding: 20px;
+            }
+            .gioithieu-container {
+                display: block;
+                flex-direction: row;
+                height: auto;
+            }
+            .gioithieu-container .image-gioithieu {
+                width: 100%;
+                height: auto;
+                width: 100%;
+                order: 1;
+            }
+            .text-gioithieu {
+                overflow-wrap: break-word;
+                font-size: 1rem;
+            }
+            .danh-sach2 .tieu-de2 {
+                height: auto;
+                margin-left: 15%;
+            }
+            footer {
+                display: flex;
+                flex-direction: column;
+                background-color: #FF8F0D;
+                align-items: center;
+            }
+            .thong-tin,
+            .fanpage {
+                width: 80%;
+                padding: 10px;
+                text-align: center;
+            }
+            .fanpage {
+                margin-top: 20px;
+            }
+            .fanpage iframe {
+                border-radius: 10px;
+            }
+            .lien-he {
+                display: flex;
+                justify-content: space-around;
+                width: fit-content;
+                margin: 0 5%;
+            }
+            .lien-he>.lien-he1 {
+                width: 33%;
+            }
+        }
+        
+        @media (max-width:767px) {
+            .top-nav_logo img {
+                width: 10rem;
+            }
+            .top-nav_lienhe {
+                display: inline-block;
+                padding-bottom: 25px;
+            }
+            .lien-he_btn-tim-kiem {
+                font-size: 0.7rem;
+            }
+            .lien-he_inp-tim-kiem {
+                width: 30vw;
+                height: 30px;
+            }
+            .lien-he_thong-tin {
+                margin-right: 2rem;
+                position: absolute;
+                top: 59px;
+                left: 4vw;
+                width: 100%;
+                font-size: 15px;
+            }
+            .lien-he_timkiem {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .menu {
+                padding-left: 0px;
+                padding-top: 0px;
+                display: inline-block;
+                width: 100%;
+            }
+            .menu_link {
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            .header-title {
+                font-size: 1.5em;
+            }
+            .sidebar {
+                display: none;
+            }
+            .columns {
+                padding: 20px;
+            }
+            .gioithieu-container {
+                display: block;
+                flex-direction: row;
+                height: auto;
+            }
+            .gioithieu-container .image-gioithieu {
+                width: 100%;
+                height: auto;
+                width: 100%;
+                order: 1;
+            }
+            .text-gioithieu {
+                overflow-wrap: break-word;
+                font-size: 1rem;
+            }
+            .form-dangky {
+                margin: auto;
+            }
+            .tieu-de {
+                flex-direction: column;
+            }
+            .danh-sach2 .tieu-de2 {
+                font-size: 0.9em;
+                margin-top: 50px;
+                text-align: left;
+            }
+            .danh-sach2 .phu-de2 {
+                font-size: 0.4em;
+                margin-top: 80px;
+            }
+            .danh-sach2 .noi-dung {
+                flex-direction: column;
+                align-items: center;
+            }
+            .danh-sach2 .new-content,
+            .danh-sach2 .new-content1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .danh-sach2 .new-content .icon,
+            .danh-sach2 .new-content1 .icon {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+            .danh-sach2 .new-content .content-nd h2,
+            .danh-sach2 .new-content1 .content-nd h2 {
+                font-size: 1.2em;
+            }
+            .danh-sach2 .new-content .content-nd p,
+            .danh-sach2 .new-content1 .content-nd p {
+                font-size: 0.6em;
+            }
+            .danh-sach2 img.ccdt {
+                width: 100%;
+            }
+        }
+        
+        @media(max-width: 1199px) and (min-width: 768px) {
+            .gioithieu-container {
+                flex-direction: row;
+            }
+            .text-gioithieu {
+                overflow-wrap: break-word;
+                height: 100%;
+            }
+            .text-gioithieu .image-gioithieu img {
+                width: 100%;
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) and (min-width: 480px) {
+            footer {
+                display: flex;
+                flex-direction: column;
+                background-color: #FF8F0D;
+                align-items: center;
+            }
+            .thong-tin,
+            .lien-he,
+            .fanpage {
+                width: 90%;
+                padding: 10px;
+                text-align: center;
+            }
+            .fanpage {
+                margin-top: 20px;
+            }
+            .lien-he p {
+                margin-left: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            footer {
+                display: flex;
+                flex-direction: column;
+                background-color: #FF8F0D;
+                align-items: center;
+            }
+            .thong-tin,
+            .lien-he,
+            .fanpage {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+            }
+            .fanpage {
+                margin-top: 20px;
+            }
+            .lien-he p {
+                margin-left: 0;
+            }
+            .gioithieu-container .text-gioithieu {
+                flex-direction: row;
+                width: 100%;
+                order: 1;
+            }
+            .gioithieu-container .image-gioithieu {
+                display: none;
+            }
+            .gioithieu-container {
+                padding-left: 30px;
+            }
+            .form-dangky {
+                margin: auto;
+                width: 100%;
+            }
+        }
