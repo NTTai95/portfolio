@@ -1,0 +1,62 @@
+
+.container-lhp{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 97%;
+}
+
+.size-img-200px{
+    width: 200px;
+    height: 200px;
+}
+
+.w-200px{
+        width: 200px;
+        min-width: 200px;
+}
+
+.h-200px{
+        height: 200px;
+        min-height: 200px;
+}
+
+.w-lg-150px{
+    @include moblet(){
+        width: 150px;
+        min-width: 150px;
+    }
+}
+
+.h-lg-150px{
+    @include moblet(){
+        height: 150px;
+        min-height: 150px;
+    }
+}
+
+.cover{
+    object-fit: cover;
+}
+
+.object-center{
+    object-position: center;
+}
+
+.text-gray{
+    color: rgb(209, 209, 210);
+}
+
+.pb-3rem{
+    padding-bottom: 3rem;
+}
+
+.clamp-6-line{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+}
+
+.font-12{
+    font-size: $font-size-12;
+}

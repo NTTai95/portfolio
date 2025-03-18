@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../vendor/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light nav-conter">
+            <a class="navbar-brand " href="#"><img class="navbar-brand-img" src="../image/icons/ncc.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto navbar-ul">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./index.html">Trang chủ <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./lichChieu.html">Lịch chiếu <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./tintuc.html">Tin tức <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./khuyenmai.html">Khuyến mãi <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./giave.html">Giá vé <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./lienhoanphim.html">Liên hoan phim <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./gioiThieu.html">Giới thiệu <span
+                                class="visually-hidden">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex pl-3">
+                <button
+                    class="btn btn-outline-light rounded-pill text-sm fw-medium border-white py-2 px-4 btn-custom-hover"
+                    data-bs-toggle="modal" data-bs-target="#registerModal" type="button">Đăng ký</button>
+                <button class="btn btn-danger rounded-pill text-sm fw-medium py-2 px-4 btn-custom-hover-dn"
+                    data-bs-toggle="modal" data-bs-target="#loginModal" type="button">Đăng
+                    nhập</button>
+            </div>
+        </nav>
+    </div>
+    <!--Begin::Login-->
+    <div class="modal fade bg-opacity-50" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+            <div
+                class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 modal-content card-login-size">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <p class="font-24 font-primary font-bold mb-0">Đăng nhập</p>
+                    <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal"
+                        aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="w-100 h-100">
+                            <path fill-rule="evenodd"
+                                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body pb-0">
+                    <form>
+                        <div class="form-dark">
+                            <div class="mb-3 d-flex flex-column">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" id="exampleFormControlInput1" placeholder="Email">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label for="exampleFormControlInput1" class="form-label">Mật khẩu</label>
+                                <input type="email" id="exampleFormControlInput1" placeholder="Mật khẩu">
+                            </div>
+                        </div>
+                        <div class="float-end"><a href="#" class="font-16 text-danger foucs-underline-thin">Quên mật
+                                khẩu?</a></div>
+                        <div>
+                            <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                                nhập</button>
+                        </div>
+                        <div class="text-center font-16 mt-4">
+                            <p class="mt-1 text-light">Bạn chưa có tài khoản? <a href="#"
+                                    class="text-danger foucs-underline-thin" data-bs-toggle="modal"
+                                    data-bs-target="#registerModal" data-bs-dismiss="modal" aria-label="Close"> Đăng
+                                    ký</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End::Login-->
+    <!--Begin::register-->
+    <div class="modal fade bg-opacity-50" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+            <div
+                class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 py-2 modal-content card-register-size">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <p class="font-24 font-primary font-bold mb-0">Đăng ký</p>
+                    <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal"
+                        aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            fill="currentColor" class="w-100 h-100">
+                            <path fill-rule="evenodd"
+                                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body flex-grow-0">
+                    <form>
+                        <div class="row g-3 form-dark">
+                            <div class="col-6">
+                                <label for="inputHo" class="form-label">Họ</label>
+                                <input type="text" id="inputHo" placeholder="Họ">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputTen" class="form-label">Tên</label>
+                                <input type="text" id="inputTen" placeholder="Tên">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputUser" class="form-label">Tên tài khoản</label>
+                                <input type="text" id="inputUser" placeholder="Tên tài khoản">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputPhone" class="form-label">Số điện thoại</label>
+                                <input type="text" id="inputPhone" placeholder="Số điện thoại">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="text" id="inputEmail" placeholder="Email">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputPass" class="form-label">Mật khẩu</label>
+                                <input type="text" id="inputPass" placeholder="Mật khẩu">
+                            </div>
+                            <div class="col-6">
+                                <label for="inputRePass" class="form-label">Xác nhận mật khẩu</label>
+                                <input type="text" id="inputRePass" placeholder="Xác nhận mật khẩu">
+                            </div>
+                        </div>
+                        <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                            ký</button>
+                </div>
+                <div class="text-center font-16">
+                    <p class="mt-2 text-light">Bạn đã có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+                            data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal"
+                            aria-label="Close"> Đăng
+                            nhập</a></p>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--End::register-->
+    <div class="pb-3rem">
+        <img src="/image/img_lienhoanphim/lienhoan01.jpeg" class="w-100">
+    </div>
+    <div class="container-lhp mb-3">
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Liên hoan phim Đức KinoFest tại Hà Nội</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-lg-150px h-lg-150px w-200px h-200px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan01.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Liên hoan phim Đức KinoFest tại Hà Nội</h4>
+                                <p class="text-gray text-nowrap">09:32 09/10/2024</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">09:32 09/10/2024</p>
+                                <p class="card-text text-gray clamp-6-line">Liên hoan phim Đức: KinoFest là Liên hoan
+                                    phim thường
+                                    niên
+                                    của Viện Goethe tại Đông Nam Á....</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Liên hoan phim Italia 2024 (23/9 – 28/9/2024) tại Trung tâm Chiếu
+                            phim Quốc gia</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan02.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Liên hoan phim Italia 2024 (23/9 – 28/9/2024) tại Trung tâm Chiếu
+                                    phim Quốc gia</h4>
+                                <p class="text-gray d-block text-nowrap">13:51 18/09/2024</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">13:51 18/09/2024</p>
+                                <p class="card-text text-gray clamp-6-line">Liên hoan phim Italia 2024 (23/9 –
+                                    28/9/2024) tại Trung
+                                    tâm
+                                    Chiếu phim Quốc gia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Chương trình phim “Salon Điện ảnh Đài Loan 2024” từ 08/09 –
+                            14/09/2024</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan03.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Chương trình phim “Salon Điện ảnh Đài Loan 2024” từ 08/09 –
+                                    14/09/2024</h4>
+                                <p class="text-gray text-nowrap">11:57 06/09/2024</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">11:57 06/09/202</p>
+                                <p class="card-text text-gray clamp-6-line">Chương trình chiếu phim “Salon Điện ảnh Đài
+                                    Loan
+                                    2024” với bộ
+                                    phim thấm đẫm hơi thở cuộc sống hiện đại, xoay quanh chủ đề phụ nữ, trẻ em và gia
+                                    đình
+                                    đã được đề cử cũng như đạt nhiều giải thưởng của điện ảnh Đài Loan sẽ được giới
+                                    thiệu
+                                    trong chương trình lần này. Đặc biệt là tác phẩm điện ảnh từng thống trị bảng xếp
+                                    hạng
+                                    phòng vé của Đài Loan năm vừa qua – “Chuyện tôi và ma quỷ thành người một nhà” – 1
+                                    trong
+                                    10 tác phẩm có doanh thu cao nhất lịch sử điện ảnh Đài Loan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Tuần lễ phim Iran tại Trung tâm Chiếu phim Quốc gia (10/1 –
+                            14/1/2024)</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan04.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Tuần lễ phim Iran tại Trung tâm Chiếu phim Quốc gia (10/1 –
+                                    14/1/2024)</h4>
+                                <p class="text-gray text-nowrap">09:55 08/01/2024</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">09:55 08/01/2024</p>
+                                <p class="card-text text-gray clamp-6-line"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Khai mạc LHP Nhật Bản tại Trung tâm Chiếu phim Quốc gia</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan05.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Khai mạc LHP Nhật Bản tại Trung tâm Chiếu phim Quốc gia</h4>
+                                <p class="text-gray text-nowrap">09:45 13/12/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">09:45 13/12/2023</p>
+                                <p class="card-text text-gray clamp-6-line">LHP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Tuần lễ phim Liên minh Thái Bình Dương</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan06.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Tuần lễ phim Liên minh Thái Bình Dương</h4>
+                                <p class="text-gray text-nowrap">11:08 05/12/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">11:08 05/12/2023</p>
+                                <p class="card-text text-gray clamp-6-line">Tuần lễ phim Liên minh Thái Bình Dương</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Liên hoan phim Italia 2023</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan07.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Liên hoan phim Italia 2023</h4>
+                                <p class="text-gray text-nowrap">16:29 30/11/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">16:29 30/11/2023</p>
+                                <p class="card-text text-gray clamp-6-line">Liên hoan phim Italia 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="border-bottom py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Liên hoan phim Nhật Bản 2023</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan08.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Liên hoan phim Nhật Bản 2023</h4>
+                                <p class="text-gray text-nowrap">16:30 28/11/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">16:30 28/11/2023</p>
+                                <p class="card-text text-gray clamp-6-line">Liên hoan phim Nhật Bản 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Khai mạc LHP Italia tại Trung tâm Chiếu phim Quốc gia</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan09.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Khai mạc LHP Italia tại Trung tâm Chiếu phim Quốc gia</h4>
+                                <p class="text-gray text-nowrap">16:05 28/11/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">16:05 28/11/2023</p>
+                                <p class="card-text text-gray clamp-6-line">Khai mạc LHP Italia tại Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <!--Begin::card-->
+        <div class="py-4 border-secondary">
+            <a href="#" class="mb-3 text-decoration-none text-light bg-transparent">
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="d-block d-lg-none">
+                        <h4>Tuần phim chào mừng Liên hoan Phim Việt Nam lần thứ XXIII.</h4>
+                    </div>
+                    <div class="d-flex w-100">
+                        <div class="w-200px h-200px w-lg-150px h-lg-150px overflow-hidden">
+                            <img src="/image/img_lienhoanphim/lienhoan10.jpeg"
+                                class="cover object-center h-100 w-100 rounded" alt="...">
+                        </div>
+                        <div class="mx-3 flex-grow-1">
+                            <div class="justify-content-between align-content-center g-2 d-none d-lg-flex">
+                                <h4 class="card-title">Tuần phim chào mừng Liên hoan Phim Việt Nam lần thứ XXIII.</h4>
+                                <p class="text-gray text-nowrap">14:12 07/11/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-gray mb-0 d-lg-none text-nowrap font-12">14:12 07/11/2023</p>
+                                <p class="card-text text-gray clamp-6-line">Tuần phim chào mừng Liên hoan Phim Việt Nam
+                                    lần thứ
+                                    XXIII.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--End::card-->
+        <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-secondary mx-1" disabled>Quay lại</button>
+            <button type="button" class="btn btn-outline-secondary mx-1" disabled>Tiếp theo</button>
+        </div>
+    </div>
+    <footer class="footer text-white footer-background">
+        <div class="container text-center">
+            <div class="row mb-3 ">
+                <div class="col-12 mt-4 ">
+                    <ul class="list-inline navbar-ul">
+                        <li class="list-inline-item mx-4"><a href="#">Chính sách</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Lịch chiếu</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Tin tức</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Giá vé</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Hỏi đáp</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 social-icons">
+                    <a href="#" class="mx-2"><img src="../image/icons/face.png" alt="Facebook"></a>
+                    <a href="#" class="mx-2"><img src="../image/icons/zalo.png" alt="Zalo"></a>
+                    <a href="#" class="mx-2"><img src="../image/icons/youtobe.png" alt="YouTube"></a>
+                    <a href="#" class="mx-4"><img class="image-social" src="../image/icons/chplay.png"
+                            alt="Google Play"></a>
+                    <a href="#" class="mx-1"><img class="image-social" src="../image/icons/appstore.png"
+                            alt="App Store"></a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
+                    <p>Bản quyền thuộc Trung tâm Chiếu phim Quốc gia</p>
+                    <p>Giấy phép số: 224/GP-TTĐT ngày 31/8/2010 - Chịu trách nhiệm: Vũ Đức Tùng - Giám đốc</p>
+                    <p>Địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội - Điện thoại: 024.35141791</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright 2023. NCC All Rights Reserved. Dev by Anvui.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/vendor/boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

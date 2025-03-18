@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../vendor/boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-primary-ct">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light nav-conter">
+          <a class="navbar-brand " href="#"><img class="navbar-brand-img" src="../image/icons/ncc.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto navbar-ul">
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./index.html">Trang chủ <span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./lichChieu.html">Lịch chiếu <span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./tintuc.html">Tin tức <span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./khuyenmai.html">Khuyến mãi <span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./giave.html">Giá vé <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./lienhoanphim.html">Liên hoan phim <span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="./gioiThieu.html">Giới thiệu <span
+                    class="visually-hidden">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex pl-3">
+            <button class="btn btn-outline-light rounded-pill text-sm fw-medium border-white py-2 px-4 btn-custom-hover"
+              data-bs-toggle="modal" data-bs-target="#registerModal" type="button">Đăng ký</button>
+            <button class="btn btn-danger rounded-pill text-sm fw-medium py-2 px-4 btn-custom-hover-dn"
+              data-bs-toggle="modal" data-bs-target="#loginModal" type="button">Đăng
+              nhập</button>
+          </div>
+        </nav>
+      </div>
+      <!--Begin::Login-->
+      <div class="modal fade bg-opacity-50" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+          <div
+            class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 modal-content card-login-size">
+            <div class="modal-header border-bottom-0 pb-0">
+              <p class="font-24 font-primary font-bold mb-0">Đăng nhập</p>
+              <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal" aria-label="Close"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-100 h-100">
+                  <path fill-rule="evenodd"
+                    d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body pb-0">
+              <form>
+                <div class="form-dark">
+                  <div class="mb-3 d-flex flex-column">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" id="exampleFormControlInput1" placeholder="Email">
+                  </div>
+                  <div class="d-flex flex-column">
+                    <label for="exampleFormControlInput1" class="form-label">Mật khẩu</label>
+                    <input type="email" id="exampleFormControlInput1" placeholder="Mật khẩu">
+                  </div>
+                </div>
+                <div class="float-end"><a href="#" class="font-16 text-danger foucs-underline-thin">Quên mật
+                    khẩu?</a></div>
+                <div>
+                  <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                    nhập</button>
+                </div>
+                <div class="text-center font-16 mt-4">
+                  <p class="mt-1 text-light">Bạn chưa có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+                      data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal" aria-label="Close">
+                      Đăng
+                      ký</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End::Login-->
+      <!--Begin::register-->
+      <div class="modal fade bg-opacity-50" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+          <div
+            class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 py-2 modal-content card-register-size">
+            <div class="modal-header border-bottom-0 pb-0">
+              <p class="font-24 font-primary font-bold mb-0">Đăng ký</p>
+              <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal" aria-label="Close"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-100 h-100">
+                  <path fill-rule="evenodd"
+                    d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body flex-grow-0">
+              <form>
+                <div class="row g-3 form-dark">
+                  <div class="col-6">
+                    <label for="inputHo" class="form-label">Họ</label>
+                    <input type="text" id="inputHo" placeholder="Họ">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputTen" class="form-label">Tên</label>
+                    <input type="text" id="inputTen" placeholder="Tên">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputUser" class="form-label">Tên tài khoản</label>
+                    <input type="text" id="inputUser" placeholder="Tên tài khoản">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputPhone" class="form-label">Số điện thoại</label>
+                    <input type="text" id="inputPhone" placeholder="Số điện thoại">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="text" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputPass" class="form-label">Mật khẩu</label>
+                    <input type="text" id="inputPass" placeholder="Mật khẩu">
+                  </div>
+                  <div class="col-6">
+                    <label for="inputRePass" class="form-label">Xác nhận mật khẩu</label>
+                    <input type="text" id="inputRePass" placeholder="Xác nhận mật khẩu">
+                  </div>
+                </div>
+                <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                  ký</button>
+            </div>
+            <div class="text-center font-16">
+              <p class="mt-2 text-light">Bạn đã có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+                  data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" aria-label="Close"> Đăng
+                  nhập</a></p>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--End::register-->
+
+    <h1 class="title text-light mt-4">Giá vé</h1>
+    <p class="title-sub text-light">(Áp dụng từ ngày 01/06/2023)</p>
+    <div class="container mt-5">
+        <p class="movie-ticket-title text-light">1.GIÁ VÉ XEM PHIM 2D </p>
+        <table class="table table-bordered text-center bg-table-ticker">
+            <thead>
+                <tr>
+                    <th colspan="1"></th>
+                    <th class="text-secondary" colspan="3">Từ thứ 2 đến thứ 5<br><small>From Monday to Thursday</small>
+                    </th>
+                    <th class="text-secondary" colspan="3">Thứ 6, 7, CN và ngày Lễ<br><small>Friday, Saturday, Sunday &
+                            public holiday</small></th>
+                </tr>
+                <tr>
+                    <th class="text-secondary" rowspan="1">Thời gian</th>
+                    <th class="text-secondary">Ghế thường<br><small>Standard</small></th>
+                    <th class="text-warning">Ghế VIP<br><small>VIP</small></th>
+                    <th class="text-danger">Ghế đôi<br><small>Sweetbox</small></th>
+                    <th class="text-secondary">Ghế thường<br><small>Standard</small></th>
+                    <th class="text-warning">Ghế VIP<br><small>VIP</small></th>
+                    <th class="text-danger">Ghế đôi<br><small>Sweetbox</small></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trước 12h<br><small>Before 12PM</small></td>
+                    <td>55.000đ</td>
+                    <td class="vip text-warning">65.000đ</td>
+                    <td class="sweetbox text-danger">140.000đ</td>
+                    <td>70.000đ</td>
+                    <td class="vip text-warning">80.000đ</td>
+                    <td class="sweetbox text-danger">170.000đ</td>
+                </tr>
+                <tr>
+                    <td>Từ 12:00 đến trước 17:00<br><small>From 12PM to before 5PM</small></td>
+                    <td>70.000đ</td>
+                    <td class="vip text-warning">75.000đ</td>
+                    <td class="sweetbox text-danger">160.000đ</td>
+                    <td>80.000đ</td>
+                    <td class="vip text-warning">85.000đ</td>
+                    <td class="sweetbox text-danger">180.000đ</td>
+                </tr>
+                <tr>
+                    <td>Từ 17:00 đến trước 23:00<br><small>From 5PM to before 11PM</small></td>
+                    <td>80.000đ</td>
+                    <td class="vip text-warning">85.000đ</td>
+                    <td class="sweetbox text-danger">180.000đ</td>
+                    <td>90.000đ</td>
+                    <td class="vip text-warning">95.000đ</td>
+                    <td class="sweetbox text-danger">200.000đ</td>
+                </tr>
+                <tr>
+                    <td>Từ 23:00<br><small>From 11PM</small></td>
+                    <td>65.000đ</td>
+                    <td class="vip text-warning">70.000đ</td>
+                    <td class="sweetbox text-danger">150.000đ</td>
+                    <td>75.000đ</td>
+                    <td class="vip text-warning">80.000đ</td>
+                    <td class="sweetbox text-danger">170.000đ</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="sub-text-table text-secondary">*Đối với phim có thời lượng từ 150 phút trở lên:
+            phụ thu 10.000 VNĐ/vé</p>
+
+        <p class="movie-ticket-title text-light">2.GIÁ VÉ XEM PHIM 3D </p>
+        <table class="table table-bordered text-center bg-table-ticker">
+            <thead>
+                <tr>
+                    <th colspan="1"></th>
+                    <th class="text-secondary" colspan="3">Từ thứ 2 đến thứ 5<br><small>From Monday to Thursday</small>
+                    </th>
+                    <th class="text-secondary" colspan="3">Thứ 6, 7, CN và ngày Lễ<br><small>Friday, Saturday, Sunday &
+                            public holiday</small></th>
+                </tr>
+                <tr>
+                    <th class="text-secondary" rowspan="1">Thời gian</th>
+                    <th class="text-secondary">Ghế thường<br><small>Standard</small></th>
+                    <th class="text-warning">Ghế VIP<br><small>VIP</small></th>
+                    <th class="text-danger">Ghế đôi<br><small>Sweetbox</small></th>
+                    <th class="text-secondary">Ghế thường<br><small>Standard</small></th>
+                    <th class="text-warning">Ghế VIP<br><small>VIP</small></th>
+                    <th class="text-danger">Ghế đôi<br><small>Sweetbox</small></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trước 12h<br><small>Before 12PM</small></td>
+                    <td>60.000đ</td>
+                    <td class="vip text-warning">80.000đ</td>
+                    <td class="sweetbox text-danger">160.000đ</td>
+                    <td>80.000đ</td>
+                    <td class="vip text-warning">100.000đ</td>
+                    <td class="sweetbox text-danger">200.000đ</td>
+                </tr>
+                <tr>
+                    <td>Từ 12:00 đến trước 17:00<br><small>From 12PM to before 5PM</small></td>
+                    <td>80.000đ</td>
+                    <td class="vip text-warning">90.000đ</td>
+                    <td class="sweetbox text-danger">180.000đ</td>
+                    <td>100.000đ</td>
+                    <td class="vip text-warning">110.000đ</td>
+                    <td class="sweetbox text-danger">220.000đ</td>
+                </tr>
+                <tr>
+                    <td>Từ 17:00 đến trước 23:00<br><small>From 5PM to before 11PM</small></td>
+                    <td>100.000đ</td>
+                    <td class="vip text-warning">110.000đ</td>
+                    <td class="sweetbox text-danger">220.000đ</td>
+                    <td>130.000đ</td>
+                    <td class="vip text-warning">140.000đ</td>
+                    <td class="sweetbox text-danger">280.000đ</td>
+                </tr>
+                <tr>
+                    <td>Từ 23:00<br><small>From 11PM</small></td>
+                    <td>100.000đ</td>
+                    <td class="vip text-warning">110.000đ</td>
+                    <td class="sweetbox text-danger">220.000đ</td>
+                    <td>120.000đ</td>
+                    <td class="vip text-warning">130.000đ</td>
+                    <td class="sweetbox text-danger">260.000đ</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="sub-text-table text-secondary">*Đối với phim có thời lượng từ 150 phút trở lên:
+            phụ thu 10.000 VNĐ/vé</p>
+
+        <div class="text-light">
+            <p><strong>*Giá vé đối với các đối tượng khán giả ưu tiên (khi trực tiếp sử dụng dịch vụ xem phim tại rạp
+                    chiếu phim):</strong></p>
+
+            <ul class="styled-list">
+                <li>Giảm 20% giá vé theo qui định đối với: Trẻ em (người dưới 16 tuổi), người cao tuổi (công dân Việt
+                    Nam từ đủ 60 tuổi trở lên), người có công với cách mạng, người có hoàn cảnh đặc biệt khó khăn.</li>
+                <li>Giảm 50% giá vé theo qui định đối với: Người khuyết tật nặng.</li>
+                <li>Giảm giá vé 100% đối với: Người khuyết tật đặc biệt nặng, trẻ em dưới 0.7m đi kèm với người lớn.
+                </li>
+            </ul>
+
+            <p><strong>Điều kiện:</strong></p>
+            <ul class="styled-list">
+                <li>Chỉ áp dụng khi mua vé tại quầy (không áp dụng khi mua online).</li>
+                <li>Các đối tượng khán giả trên phải xuất trình giấy tờ chứng minh khi mua vé xem phim và trước khi vào
+                    phòng chiếu. Cụ thể:
+                    <ul>
+                        <li>Trẻ em (trường hợp trẻ em từ 14-16 tuổi), người cao tuổi: xuất trình "Căn cước công dân".
+                        </li>
+                        <li>Người có công với cách mạng: xuất trình giấy xác nhận theo quy định.</li>
+                        <li>Người có hoàn cảnh đặc biệt khó khăn: xuất trình "Giấy chứng nhận hộ nghèo".</li>
+                        <li>Người khuyết tật: xuất trình "Giấy xác nhận khuyết tật".</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p><strong>Ưu đãi cho học sinh, sinh viên từ 22 tuổi trở xuống: Đồng giá 55.000đ /vé 2D cho tất cả
+                    các suất chiếu phim từ Thứ 2 đến Thứ 6 (chỉ áp dụng cho hình thức mua vé trực tiếp tại quầy, không
+                    áp
+                    dụng với ghế đôi; Mỗi thẻ được mua 1 vé/ngày và vui lòng xuất trình thẻ U22 kèm thẻ HSSV khi mua
+                    vé).</strong>
+            </p>
+
+            <p><strong>Khán giả nghiêm túc thực hiện xem phim đúng độ tuổi theo phân loại phim:P, K, T13, T16,
+                    T18, C.(Trường hợp vi phạm sẽ xử phạt theo Quy định tại Nghị định 128/2022/NĐ-CP ngày
+                    30/12/2022).</strong></p>
+
+            <p><strong>Không bán vé cho trẻ em dưới 13 tuổi đối với các suất chiếu phim kết thúc sau 22h00 và không bán
+                    vé cho trẻ em dưới 16 tuổi đối với các suất chiếu phim kết thúc sau 23h00.</strong></p>
+
+            <p><strong>Áp dụng giá vé ngày Lễ, Tết cho các ngày:</strong></p>
+            <ul class="styled-list">
+                <li>Các ngày nghỉ Lễ, Tết theo quy định của nhà nước: Tết Nguyên Đán, Tết Dương Lịch, ngày Giỗ Tổ Hùng
+                    Vương 10/3 AL, ngày 30/4, 1/5, 2/9.</li>
+                <li>Các ngày: 14/2, 8/3, 24/12.</li>
+                <li>Các ngày: Nghỉ bù do nghỉ Lễ, Tết trùng vào thứ 7, Chủ Nhật.</li>
+            </ul>
+            <p><strong>*Không áp dụng các chế độ ưu đãi, các chương trình khuyến mại khác vào các ngày 20/10, 20/11,
+                    Halloween 31/10, các ngày Lễ, Tết, suất chiếu sớm và suất chiếu đặc biệt.</strong></p>
+
+            <p><strong>Mua vé xem phim tập thể, hợp đồng khoán gọn:Phòng chiếu phim - (024) 35148647.</strong></p>
+
+            <p><strong>Thuê phòng tổ chức Hội nghị, làm văn phòng, quảng cáo và các dịch vụ khác:Phòng Dịch vụ
+                    - (024) 35142856.</strong></p>
+
+            <p>ĐỀ NGHỊ QUÝ KHÁN GIẢ LƯU Ý KHI MUA VÉ XEM PHIM (ĐẶC BIỆT KHI MUA VÉ ONLINE) TTCPQG
+                KHÔNG CHẤP NHẬN HOÀN TIỀN HOẶC ĐỔI VÉ ĐÃ THANH TOÁN THÀNH CÔNG KHI MUA VÉ ONLINE VÀ VÉ MUA SAI QUY ĐỊNH
+                TẠI QUẦY VÉ.</p>
+
+            <p>Rất mong Quý khán giả phối hợp thực hiện. Xin trân trọng cảm ơn!</p>
+
+            <p><strong>*Ticket pricing policy for priority audiences watching movies at the cinema:</strong></p>
+            <ul class="styled-list">
+                <li>Discount 20% on ticket price for: Children and teenagers (under 16 years old),
+                    elderly people (Vietnamese citizens aged from 60 years old),
+                    revolutionary contributors, people with difficult living conditions.</li>
+                <li>Discount 50% on ticket price as regulations for: People with severe disabilities.</li>
+                <li>Discount 100% on ticket price for: People with particularly severe disabilities;
+                    Children under 0.7m accompanied by adults.</li>
+            </ul>
+
+            <p><strong>Condition</strong></p>
+            <ul class="styled-list">
+                <li>Only applicable when buying tickets at the counter (not applicable for online tickets).</li>
+                <li>The above-mentioned audiences must present Identification Documents when buying movie tickets
+                    and before entering the screening room. Particularly:
+                    <ul>
+                        <li>Revolutionary contributors: must present a certificate as prescribed.
+                        </li>
+                        <li>People with difficult living conditions: must present "Certificate of Poor Household</li>
+                        <li>People with disabilities: must present "Certificate of Disability</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p><strong>*Special promotion for student who is 22 years old and under: From Monday to Friday 55.000 đ/2D ticket for all slot times
+                 (only apply for direct purchase at the ticket stall, 
+                one student card can buy one ticket/day, student should show their U22 and student cards to get this priority). </strong></p>
+            
+                <p><strong>* Strict implementation of audience classification according to their ages: P, K, T13, T16, T18, C. 
+                    (Violation will be sanctioned according to the provisions of Decree 128/2022/ND-CP dated on December 30, 2022).</strong></p>
+
+
+            <p><strong>* Tickets for movies ending after 22:00 are not sold to teenagers under 13 years old and tickets for movies ending 
+                after 23:00 are not sold to teenagers under 16 years old.</strong></p>
+        </div>
+
+    </div> <!--Begin::Footer-->
+    <footer class="footer text-white footer-background">
+        <div class="container text-center">
+            <div class="row mb-3 ">
+                <div class="col-12 mt-4 ">
+                    <ul class="list-inline navbar-ul">
+                        <li class="list-inline-item mx-4"><a href="#">Chính sách</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Lịch chiếu</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Tin tức</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Giá vé</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Hỏi đáp</a></li>
+                        <li class="list-inline-item mx-4"><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 social-icons">
+                    <a href="#" class="mx-2"><img src="../image/icons/face.png" alt="Facebook"></a>
+                    <a href="#" class="mx-2"><img src="../image/icons/zalo.png" alt="Zalo"></a>
+                    <a href="#" class="mx-2"><img src="../image/icons/youtobe.png" alt="YouTube"></a>
+                    <a href="#" class="mx-4"><img class="image-social" src="../image/icons/chplay.png"
+                            alt="Google Play"></a>
+                    <a href="#" class="mx-1"><img class="image-social" src="../image/icons/appstore.png"
+                            alt="App Store"></a>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12">
+                    <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
+                    <p>Bản quyền thuộc Trung tâm Chiếu phim Quốc gia</p>
+                    <p>Giấy phép số: 224/GP-TTĐT ngày 31/8/2010 - Chịu trách nhiệm: Vũ Đức Tùng - Giám đốc</p>
+                    <p>Địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội - Điện thoại: 024.35141791</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright 2023. NCC All Rights Reserved. Dev by Anvui.vn</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End::Footer-->
+    <script src="/vendor/boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

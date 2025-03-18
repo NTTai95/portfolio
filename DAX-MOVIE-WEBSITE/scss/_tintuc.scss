@@ -1,0 +1,58 @@
+.bg-primary-ct{
+    background: $color-background-primary;
+}
+.title{
+    text-align: center;
+}
+
+.text-card-body{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    font-size: $font-size-16
+}
+
+.text-card-body:hover{
+    color: $color-text-danger
+}
+
+.container-custome{
+    max-width: 90%;
+    margin: auto;
+}
+
+.object-fit-cover{
+    object-fit: cover;
+    height: 250px;
+}
+
+.h-400px{
+    height: 400px
+}
+
+.object-fit-cover:hover{
+    transform: scale(1.1); // Phóng to ảnh khi hover
+    transition: transform 0.3s ease-in-out; // Hiệu ứng scale mượt
+
+}
+
+.hd-redundant{
+    overflow: hidden;
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end; // Đẩy các nút về bên phải
+    gap: 10px; // Khoảng cách giữa các nút
+    font-size: 20px;
+}
+
+.multiline-ellipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Giới hạn số dòng hiển thị */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+//hết trang tin tức

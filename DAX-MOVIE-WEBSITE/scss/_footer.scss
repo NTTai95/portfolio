@@ -1,0 +1,23 @@
+.footer-background{
+    background-color: #0B0D13;
+  }
+  .text-white {
+    li {
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .text-white {
+    li {
+      a:hover {
+        color: $color-text-hover !important;
+      }
+    }
+  }
+
+  .image-social{
+    width: 120px;
+  }

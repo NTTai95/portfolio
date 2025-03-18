@@ -1,0 +1,129 @@
+.container {
+    color: #FFFFFF;
+    font-family: $font-family-primary;
+}
+
+
+.phim-card {
+    border: 1px solid $color-btn-hover;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .hinhAnh {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 0 0 10px !important;
+            transition: transform 0.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .phim-info {
+        position: relative;
+
+        .phim-title {
+            font-weight: $font-weight-bold;
+            font-size: 1.2rem;
+        }
+
+        .phim-genre {
+            color: rgb(62, 74, 94);
+            line-height: 8px;
+
+            p {
+                font-size: $font-size-16 !important;
+            }
+        }
+
+        .phim-age {
+            font-size: $font-size-16;
+        }
+
+        .custom-label {
+            color: rgba(209, 213, 219, 1);
+            border-color: rgba(75, 85, 99, 1);
+            border-width: 1px;
+            border-radius: calc(var(--bs-border-radius) - 2px);
+            top: 10px;
+            right: 10px;
+        }
+
+        p {
+            font-size: $font-size-12;
+        }
+
+        .lich {
+            P {
+                font-size: $font-size-16 !important;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.phim-list {
+    .col {
+        margin-bottom: 20px;
+    }
+}
+
+.phim-showtimes {
+    button {
+        color: #FFFFFF;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: $color-btn-hover;
+            color: #FFFFFF;
+        }
+
+        &:focus {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            outline: none;
+        }
+    }
+}
+
+.day-filter {
+    .day-filter-header {
+        .tron {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    button {
+        border: 1px solid $color-btn-hover;
+        color: #FFFFFF;
+        background-color: transparent;
+        border-radius: 8px;
+
+        &:hover {
+            background-color: $color-btn-hover;
+            color: #FFFFFF;
+        }
+
+        &:focus {
+            background: linear-gradient(210deg, #fe6969, #e30713);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            outline: none;
+        }
+    }
+}
+
+.color-text-mix {
+    color: rgba(249, 115, 22, 0.8)
+}

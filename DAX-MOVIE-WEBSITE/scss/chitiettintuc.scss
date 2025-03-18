@@ -1,0 +1,22 @@
+h3{
+    margin-right: 50px;
+}
+
+.content {
+    title {
+        margin-bottom: 50px; /* Khoảng cách dưới tiêu đề */
+        margin-top:50px;
+    }
+
+    p {
+        margin-bottom: 15px; /* Khoảng cách dưới mỗi đoạn văn */
+        line-height: 1.6;    /* Giãn dòng giữa các dòng trong đoạn văn */
+    }
+
+    ol {
+        margin-bottom: 20px; /* Khoảng cách dưới danh sách */
+        li {
+            margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
+        }
+    }
+}

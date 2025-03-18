@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="../vendor/boostrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light nav-conter">
+      <a class="navbar-brand " href="#"><img class="navbar-brand-img" src="../image/icons/ncc.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto navbar-ul">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./index.html">Trang chủ <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./lichChieu.html">Lịch chiếu <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./tintuc.html">Tin tức <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./khuyenmai.html">Khuyến mãi <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./giave.html">Giá vé <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./lienhoanphim.html">Liên hoan phim <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./gioiThieu.html">Giới thiệu <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex pl-3">
+        <button class="btn btn-outline-light rounded-pill text-sm fw-medium border-white py-2 px-4 btn-custom-hover"
+          data-bs-toggle="modal" data-bs-target="#registerModal" type="button">Đăng ký</button>
+        <button class="btn btn-danger rounded-pill text-sm fw-medium py-2 px-4 btn-custom-hover-dn"
+          data-bs-toggle="modal" data-bs-target="#loginModal" type="button">Đăng
+          nhập</button>
+      </div>
+    </nav>
+  </div>
+  <!--Begin::Login-->
+  <div class="modal fade bg-opacity-50" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+      <div
+        class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 modal-content card-login-size">
+        <div class="modal-header border-bottom-0 pb-0">
+          <p class="font-24 font-primary font-bold mb-0">Đăng nhập</p>
+          <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal" aria-label="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-100 h-100">
+              <path fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body pb-0">
+          <form>
+            <div class="form-dark">
+              <div class="mb-3 d-flex flex-column">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" id="exampleFormControlInput1" placeholder="Email">
+              </div>
+              <div class="d-flex flex-column">
+                <label for="exampleFormControlInput1" class="form-label">Mật khẩu</label>
+                <input type="email" id="exampleFormControlInput1" placeholder="Mật khẩu">
+              </div>
+            </div>
+            <div class="float-end"><a href="#" class="font-16 text-danger foucs-underline-thin">Quên mật
+                khẩu?</a></div>
+            <div>
+              <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                nhập</button>
+            </div>
+            <div class="text-center font-16 mt-4">
+              <p class="mt-1 text-light">Bạn chưa có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+                  data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal" aria-label="Close">
+                  Đăng
+                  ký</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End::Login-->
+  <!--Begin::register-->
+  <div class="modal fade bg-opacity-50" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+      <div
+        class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 py-2 modal-content card-register-size">
+        <div class="modal-header border-bottom-0 pb-0">
+          <p class="font-24 font-primary font-bold mb-0">Đăng ký</p>
+          <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal" aria-label="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-100 h-100">
+              <path fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body flex-grow-0">
+          <form>
+            <div class="row g-3 form-dark">
+              <div class="col-6">
+                <label for="inputHo" class="form-label">Họ</label>
+                <input type="text" id="inputHo" placeholder="Họ">
+              </div>
+              <div class="col-6">
+                <label for="inputTen" class="form-label">Tên</label>
+                <input type="text" id="inputTen" placeholder="Tên">
+              </div>
+              <div class="col-12">
+                <label for="inputUser" class="form-label">Tên tài khoản</label>
+                <input type="text" id="inputUser" placeholder="Tên tài khoản">
+              </div>
+              <div class="col-6">
+                <label for="inputPhone" class="form-label">Số điện thoại</label>
+                <input type="text" id="inputPhone" placeholder="Số điện thoại">
+              </div>
+              <div class="col-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="text" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="col-6">
+                <label for="inputPass" class="form-label">Mật khẩu</label>
+                <input type="text" id="inputPass" placeholder="Mật khẩu">
+              </div>
+              <div class="col-6">
+                <label for="inputRePass" class="form-label">Xác nhận mật khẩu</label>
+                <input type="text" id="inputRePass" placeholder="Xác nhận mật khẩu">
+              </div>
+            </div>
+            <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+              ký</button>
+        </div>
+        <div class="text-center font-16">
+          <p class="mt-2 text-light">Bạn đã có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+              data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" aria-label="Close"> Đăng
+              nhập</a></p>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--End::register-->
+
+  <div class="container mt-4 mb-5">
+    <div class="text-center mb-4">
+        <h3 class="text-2xl font-bold text-center mb-6">Giới thiệu</h3>
+    </div>
+    <div class="nav-button justify-content-center flex-wrap d-flex">
+        <a href="./gioiThieu.html" class="btn btn-outline-light mx-2 px-4 py-2 text-sm rounded-pill custom-hover-gt">Giới thiệu</a>
+        <a href="./gioiThieu-dichVu.html" class="btn btn-outline-light mx-2 px-4 py-2 text-sm rounded-pill custom-hover-dv">Dịch vụ</a>
+        <a href="./gioiThieu-nhaHat.html" class="btn btn-outline-light mx-2 px-4 py-2 text-sm rounded-pill custom-hover-pc">Phòng chiếu - Nhà hát</a>
+        <a href="./gioThieu-ncc.html" class="btn btn-danger mx-2 px-4 py-2 text-sm rounded-pill custom-hover custom-hover-ncc">NCC - Điểm hẹn cuối tuần</a>
+    </div>
+    <div class="contact-info mt-5">
+        <p class="custom-contact-text">Hoạt động vui chơi giải trí - ẩm thực ngoài trời <strong>“NCC – Điểm hẹn cuối tuần”</strong> là sự kiện ngoài trời diễn ra <strong>từ 17h30 đến 22h30 vào tối Thứ 6 – Thứ 7 hàng tuần.</strong> Trung tâm Chiếu phim không chỉ là đơn thuần là nơi chiếu phim mà còn là không gian văn hóa với nhiều hoạt động vui chơi, giải trí khác nhau phù hợp với nhiều đối tượng.</p>
+        <p class="custom-contact-text">Khán giả có thể khám phá và trải nghiệm nhiều quầy hàng đa dạng như quầy đồ ăn; quầy trò chơi hoạt náo; quầy mua sắm, đồ lưu niệm và biểu diễn ca nhạc, nhạc cụ không chuyên... </p>
+        <p class="ql-indent-6"><br></p>
+        <p class="ql-indent-6"><img src="../image/icons/gioiThieu-ncc-1.png" alt="" class="gioi-thieu-img-1"></p> 
+        <p class="ql-indent-6"><br></p>
+        <p class="ql-indent-6"><img src="../image/icons/gioiThieu-ncc-2.png" alt="" class="gioi-thieu-img-1"></p> 
+        <p class="ql-indent-6"><br></p>
+        <p><br></p>
+        <p><br></p>
+    </div>
+</div>
+
+  <footer class="footer text-white footer-background">
+    <div class="container text-center">
+      <div class="row mb-3 ">
+        <div class="col-12 mt-4 ">
+          <ul class="list-inline navbar-ul">
+            <li class="list-inline-item mx-4"><a href="#">Chính sách</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Lịch chiếu</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Tin tức</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Giá vé</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Hỏi đáp</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-12 social-icons">
+          <a href="#" class="mx-2"><img src="../image/icons/face.png" alt="Facebook"></a>
+          <a href="#" class="mx-2"><img src="../image/icons/zalo.png" alt="Zalo"></a>
+          <a href="#" class="mx-2"><img src="../image/icons/youtobe.png" alt="YouTube"></a>
+          <a href="#" class="mx-4"><img class="image-social" src="../image/icons/chplay.png" alt="Google Play"></a>
+          <a href="#" class="mx-1"><img class="image-social" src="../image/icons/appstore.png" alt="App Store"></a>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-12">
+          <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
+          <p>Bản quyền thuộc Trung tâm Chiếu phim Quốc gia</p>
+          <p>Giấy phép số: 224/GP-TTĐT ngày 31/8/2010 - Chịu trách nhiệm: Vũ Đức Tùng - Giám đốc</p>
+          <p>Địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội - Điện thoại: 024.35141791</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright 2023. NCC All Rights Reserved. Dev by Anvui.vn</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/vendor/boostrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

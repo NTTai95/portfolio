@@ -1,0 +1,114 @@
+@import "mixin";
+@import "variable";
+@import "header";
+@import "footer";
+@import "login";
+@import 'register';
+@import 'lienhoanphim';
+@import 'index';
+@import 'indexSlider';
+@import "tintuc";
+@import "giave";
+@import "chitiettintuc";
+@import "chitietkhuyenmai";
+@import 'lichChieu';
+@import 'chitiet';
+
+body{
+  background-color: #10141b !important;
+}
+
+.custom-text{
+  color: $color-text-hover !important;
+}
+
+.font-bold{
+  font-weight: 700;
+  color: white;
+}
+
+.nav-button a {
+ border-color: #1e293b;
+ border-radius: 5px; 
+}
+
+.custom-contact-text{
+  font-size: $font-size-18;
+  text-align: justify;
+  margin-bottom: 0px;
+  color: rgb(255, 255 ,255);
+}
+
+.gioi-thieu-img-1{
+  width: 1257px;
+}
+
+.gioi-thieu-img-2{
+  width: 784px;
+}
+
+.custom-hover{
+  background-color: #dc3545 !important;
+  color: white; 
+  border-color: #1e293b !important;
+  width: 140px;
+  pointer-events: none;
+}
+
+.custom-hover-dv{
+  width: 120px;
+}
+
+.custom-hover-pc{
+  width: 230px;
+  
+}
+.custom-hover-ncc{
+  width: 255px;
+}
+
+.custom-hover-ncc:focus,
+.custom-hover-ncc:active,
+.custom-hover-dv:focus,
+.custom-hover-dv:active,
+.custom-hover-pc:focus,
+.custom-hover-pc:active,
+.custom-hover-gt:focus,
+.custom-hover-gt:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-contact-text strong{
+  font-weight: bolder;
+}
+
+.custom-hover-dv:hover,
+.custom-hover-pc:hover,
+.custom-hover-ncc:hover{
+  background-color: #1e293b !important;
+  color: #fff !important;
+  border-color: #1e293b !important;
+}
+
+.justify-content{
+  justify-content: center !important;
+}
+
+// dịch vụ
+.custom-hover-gt:hover{
+  background-color: #1e293b !important;
+  color: #fff !important;
+  border-color: #1e293b !important;
+}
+
+.ql-indent-6{
+  margin-bottom: 0px;
+}
+
+.gioi-thieu-img-5,
+.gioi-thieu-img-11{
+  max-width: 100%;
+  width: 1004px;
+  height: 337px;
+}

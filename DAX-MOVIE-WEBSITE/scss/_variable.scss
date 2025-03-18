@@ -1,0 +1,48 @@
+//font family
+$font-family-primary: "Roboto", Arial, sans-serif;
+$font-family-secondary: "Radley", serif;
+
+//font size
+$font-size: 14px;
+$font-size-10: 10px;
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-24: 24px;
+$font-size-28: 28px;
+$font-size-38: 38px;
+
+
+//color
+$color-background-primary: #10141b;
+$color-primary: #da251c;
+$color-button: #f4474b;
+$color-btn-hover: #1e293b;
+$color-text-hover: #d53e3f;
+$color-text: #333;
+$color-text-danger: #ef4444;
+$color-text-yellow: #eab308;
+$color-background-card: #020817;
+$color-border-card: #1E293B;
+$color-btn-gradient-red-white: linear-gradient(210deg,#fe6969, #e30713);
+
+
+//font weight
+$font-weight-light: 300;
+$font-weigh-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+$font-weight-black: 900;
+
+//screen device
+$small-mobile: "screen and (max-width: 375.98px)";
+$mobile: "screen and (max-width: 575.98px)";
+$tablet: "screen and (max-width: 767.98px)";
+$moblet: "screen and (max-width: 991.98px)";
+$desktop: "screen and (max-width: 1199.98px)";
+$large-desktop: "screen and (max-width: 1399.98px)";
+
+

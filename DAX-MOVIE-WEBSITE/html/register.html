@@ -1,0 +1,63 @@
+<!--Begin::register-->
+<div class="modal fade bg-opacity-50" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+aria-hidden="true">
+<div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+    <div
+        class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 py-2 modal-content card-register-size">
+        <div class="modal-header border-bottom-0 pb-0">
+            <p class="font-24 font-primary font-bold mb-0">Đăng ký</p>
+            <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal"
+                aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="currentColor" class="w-100 h-100">
+                    <path fill-rule="evenodd"
+                        d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <div class="modal-body flex-grow-0">
+            <form>
+                <div class="row g-3 form-dark">
+                    <div class="col-6">
+                        <label for="inputHo" class="form-label">Họ</label>
+                        <input type="text" id="inputHo" placeholder="Họ">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputTen" class="form-label">Tên</label>
+                        <input type="text" id="inputTen" placeholder="Tên">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputUser" class="form-label">Tên tài khoản</label>
+                        <input type="text" id="inputUser" placeholder="Tên tài khoản">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputPhone" class="form-label">Số điện thoại</label>
+                        <input type="text" id="inputPhone" placeholder="Số điện thoại">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputPass" class="form-label">Mật khẩu</label>
+                        <input type="text" id="inputPass" placeholder="Mật khẩu">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputRePass" class="form-label">Xác nhận mật khẩu</label>
+                        <input type="text" id="inputRePass" placeholder="Xác nhận mật khẩu">
+                    </div>
+                </div>
+                <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                    ký</button>
+        </div>
+        <div class="text-center font-16">
+            <p class="mt-2 text-light">Bạn đã có tài khoản? <a href="#"
+                    class="text-danger foucs-underline-thin" data-bs-toggle="modal"
+                    data-bs-target="#loginModal" data-bs-dismiss="modal" aria-label="Close"> Đăng
+                    nhập</a></p>
+        </div>
+        </form>
+    </div>
+</div>
+</div>
+<!--End::register-->

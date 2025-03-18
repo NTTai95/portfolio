@@ -1,0 +1,52 @@
+.title {
+    font-weight: $font-weight-semi-bold;
+    font-size: 22px;
+}
+
+
+.title-sub {
+    text-align: center;
+}
+
+.movie-ticket-title {
+    font-weight: $font-weight-semi-bold;
+    font-size: 18px;
+}
+
+.bg-table-ticker {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $color-background-primary;
+
+    th,
+    td {
+        border: 1px solid $color-text;
+        padding: 10px;
+        text-align: center;
+        border-bottom-color: $color-text !important;
+    }
+
+    tr:hover {
+        background-color: $color-btn-hover;
+    }
+
+    tbody {
+        tr {
+            color: white;
+        }
+    }
+
+}
+
+
+.styled-list {
+    font-size: $font-size-16;
+
+    li {
+        list-style: "- ";
+
+        li {
+            list-style: "+ ";
+        }
+    }
+}

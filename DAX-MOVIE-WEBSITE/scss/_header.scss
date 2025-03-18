@@ -1,0 +1,64 @@
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px 0;
+  background-attachment: fixed;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  z-index: 1000;
+}
+
+.nav-conter {
+  margin: 0px 100px 0px 120px;
+}
+
+.navbar-brand-img {
+  display: block;
+  max-width: 100%;
+  width: 66px;
+  margin-right: 15px;
+}
+
+.navbar-ul li a {
+  font-size: $font-size-16;
+}
+
+.nav-link:hover {
+  color: $color-text-hover !important;
+}
+
+.gradient-btn {
+  background: $color-text-hover;
+  border: none;
+}
+
+.btn-custom-hover:focus,
+.btn-custom-hover:active,
+.btn-custom-hover-dn:focus,
+.btn-custom-hover-dn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-custom-hover {
+  transition: transform 0.5s ease, background-color 0.3s ease !important;
+  margin-right: 1.5vw;
+  width: 130px;
+}
+
+.btn-custom-hover:hover {
+  background-color: #241745 !important;
+  color: #ffffff !important;
+  transform: scale(1.05);
+}
+
+.btn-custom-hover-dn {
+  transition: transform 0.5s ease, background-color 0.3s ease !important;
+  margin-right: 1vw;
+  width: 140px;
+}
+
+.btn-custom-hover-dn:hover {
+  transform: scale(1.05);
+}

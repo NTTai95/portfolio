@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="../vendor/boostrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/vendor/swiper/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light nav-conter">
+      <a class="navbar-brand " href="#"><img class="navbar-brand-img" src="../image/icons/ncc.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto navbar-ul">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./index.html">Trang chủ <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./lichChieu.html">Lịch chiếu <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./tintuc.html">Tin tức <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./khuyenmai.html">Khuyến mãi <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./giave.html">Giá vé <span class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./lienhoanphim.html">Liên hoan phim <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-white" href="./gioiThieu.html">Giới thiệu <span
+                class="visually-hidden">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex pl-3">
+        <button class="btn btn-outline-light rounded-pill text-sm fw-medium border-white py-2 px-4 btn-custom-hover"
+          data-bs-toggle="modal" data-bs-target="#registerModal" type="button">Đăng ký</button>
+        <button class="btn btn-danger rounded-pill text-sm fw-medium py-2 px-4 btn-custom-hover-dn"
+          data-bs-toggle="modal" data-bs-target="#loginModal" type="button">Đăng
+          nhập</button>
+      </div>
+    </nav>
+  </div>
+  <!--Begin::Login-->
+  <div class="modal fade bg-opacity-50" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+      <div
+        class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 modal-content card-login-size">
+        <div class="modal-header border-bottom-0 pb-0">
+          <p class="font-24 font-primary font-bold mb-0">Đăng nhập</p>
+          <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal" aria-label="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-100 h-100">
+              <path fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body pb-0">
+          <form>
+            <div class="form-dark">
+              <div class="mb-3 d-flex flex-column">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" id="exampleFormControlInput1" placeholder="Email">
+              </div>
+              <div class="d-flex flex-column">
+                <label for="exampleFormControlInput1" class="form-label">Mật khẩu</label>
+                <input type="email" id="exampleFormControlInput1" placeholder="Mật khẩu">
+              </div>
+            </div>
+            <div class="float-end"><a href="#" class="font-16 text-danger foucs-underline-thin">Quên mật
+                khẩu?</a></div>
+            <div>
+              <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+                nhập</button>
+            </div>
+            <div class="text-center font-16 mt-4">
+              <p class="mt-1 text-light">Bạn chưa có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+                  data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal" aria-label="Close">
+                  Đăng
+                  ký</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End::Login-->
+  <!--Begin::register-->
+  <div class="modal fade bg-opacity-50" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog max-w-none d-flex justify-content-center align-items-center h-100 m-0">
+      <div
+        class="bg-card-priamry text-light border-card border-solid rounded-1.4rem px-3 py-2 modal-content card-register-size">
+        <div class="modal-header border-bottom-0 pb-0">
+          <p class="font-24 font-primary font-bold mb-0">Đăng ký</p>
+          <button class="btn-icon text-secondary btn-size-2.5rem" data-bs-dismiss="modal" aria-label="Close"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-100 h-100">
+              <path fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body flex-grow-0">
+          <form>
+            <div class="row g-3 form-dark">
+              <div class="col-6">
+                <label for="inputHo" class="form-label">Họ</label>
+                <input type="text" id="inputHo" placeholder="Họ">
+              </div>
+              <div class="col-6">
+                <label for="inputTen" class="form-label">Tên</label>
+                <input type="text" id="inputTen" placeholder="Tên">
+              </div>
+              <div class="col-12">
+                <label for="inputUser" class="form-label">Tên tài khoản</label>
+                <input type="text" id="inputUser" placeholder="Tên tài khoản">
+              </div>
+              <div class="col-6">
+                <label for="inputPhone" class="form-label">Số điện thoại</label>
+                <input type="text" id="inputPhone" placeholder="Số điện thoại">
+              </div>
+              <div class="col-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="text" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="col-6">
+                <label for="inputPass" class="form-label">Mật khẩu</label>
+                <input type="text" id="inputPass" placeholder="Mật khẩu">
+              </div>
+              <div class="col-6">
+                <label for="inputRePass" class="form-label">Xác nhận mật khẩu</label>
+                <input type="text" id="inputRePass" placeholder="Xác nhận mật khẩu">
+              </div>
+            </div>
+            <button class="w-100 mt-4 py-2 btn-danger rounded-pill font-16 gradient-red-white">Đăng
+              ký</button>
+        </div>
+        <div class="text-center font-16">
+          <p class="mt-2 text-light">Bạn đã có tài khoản? <a href="#" class="text-danger foucs-underline-thin"
+              data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal" aria-label="Close"> Đăng
+              nhập</a></p>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--End::register-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/image/icons/banner-1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/image/icons/banner-2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/image/icons/banner-3.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item position-relative">
+        <div class="slider">
+          <div class="infor_slider">
+            <div class="container _custom w-50 mx-0">
+              <p class="text-white display-6 fw-bold text-shadow-sm">BIỆT ĐỘI HOT GIRL-T16</p>
+              <div class="d-flex flex-wrap align-items-center mt-2 mt-sm-4 gap-3 fs-6">
+                <p>Hài, Tâm lý, Tình cảm | 2D</p>
+                <p>Việt Nam</p>
+                <p>95 phút</p>
+                <p>Đạo diễn: Vĩnh Khương</p>
+              </div>
+              <p class="fs-6">Diễn viên: NSND Hoàng Dũng, Mr Kim, Yu CHU, Sam Sony, Bảo Uyên, Tuệ Minh, Thuỳ Trang, Ái
+                Vân, Anna Linh</p>
+              <p class="mt-3 mt-sm-5 line-clamp-4 fs-6">Câu chuyện của 6 cô gái đến từ 3 quốc gia Châu Á. Họ không biết
+                mình là ai? Đến từ quốc gia nào? HẮC VÔ ĐẠO, một tay trùm mafia buôn ma túy, buôn người, giải thoát cứu
+                sống 6 cô gái từ lúc nhỏ và nuôi dạy các cô gái trên hoang đảo. Các cô gái trưởng thành, khao khát được
+                yêu nhưng cuộc sống và số phận buộc họ phải thực hiện những phi vụ mạo hiểm, kể cả giết người để bảo vệ
+                những trẻ em vô tội.</p>
+              <div class="mt-3 mt-sm-5">
+                <div class="text-danger fs-6">Kiểm duyệt: T16 - Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên
+                  (16+)</div>
+                <div class="mt-3 mt-sm-4">
+                  <p class="fs-6">Khởi chiếu: 25/10/2024</p>
+                  <p class="fs-6">Bạn đã xem bộ phim này? Đánh giá ngay</p>
+                </div>
+                <div class="d-flex align-items-center mt-2">
+                  <span class="text-warning fs-3">★</span>
+                  <span class="text-warning fs-3">★</span>
+                  <span class="text-warning fs-3">★</span>
+                  <span class="text-warning fs-3">★</span>
+                  <span class="text-warning fs-3">★</span>
+                </div>
+                <div class="mt-4 mt-lg-5">
+                  <button
+                    class="btn btn-danger fw-medium d-flex align-items-center justify-content-center rounded-pill fs-6 px-4 py-2 shadow-sm"
+                    style="transition: transform 0.2s ease-in-out;">
+                    <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"
+                      class="me-2" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375z">
+                      </path>
+                    </svg>
+                    Mua vé ngay
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <iframe class="iframe_slider" frameborder="0" allowfullscreen=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="OFFICIAL TRAILER | BIỆT ĐỘI HOTGIRL | DỰ KIẾN KHỞI CHIẾU 25.10.2024" width="100%" height="100%"
+            src="https://www.youtube.com/embed/GCxopxk_BwY?autoplay=1&amp;mute=1&amp;controls=0&amp;origin=https%3A%2F%2Fchieuphimquocgia.com.vn&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;iv_load_policy=3&amp;modestbranding=1&amp;enablejsapi=1&amp;widgetid=9"
+            id="widget10"></iframe>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Begin::Body-->
+  <div class="container-index text-light mt-5">
+    <div class="d-flex flex-column flex-xxl-row gap-4">
+      <div class="w-100 w-xxl-80">
+        <!--Begin::PhimDangChieuTablet-->
+        <div class="swiper swiper-tablet swiperPhimDangChieuTablet d-xxl-none" style="overflow: visible;">
+          <div class="swiper-wrapper" style="overflow: visible;">
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim01.jpeg" />
+              <img class="reflection" src="/image/img_index/phim01.jpeg" />
+              <p class="text-light font-bold text-center w-220px w-lg-280px font-12 font-lg-16">NGÀY XƯA CÓ MỘT CHUYỆN
+                TÌNH - T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim02.jpeg" />
+              <img class="reflection" src="/image/img_index/phim02.jpeg" />
+              <p class="text-light font-bold text-center">VENOM: THE LAST DANCE-T13</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim03.jpeg" />
+              <img class="reflection" src="/image/img_index/phim03.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim04.jpeg" />
+              <img class="reflection" src="/image/img_index/phim04.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim05.jpeg" />
+              <img class="reflection" src="/image/img_index/phim05.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim06.jpeg" />
+              <img class="reflection" src="/image/img_index/phim06.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim07.png" />
+              <img class="reflection" src="/image/img_index/phim07.png" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim08.jpeg" />
+              <img class="reflection" src="/image/img_index/phim08.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim09.jpeg" />
+              <img class="reflection" src="/image/img_index/phim09.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim10.jpeg" />
+              <img class="reflection" src="/image/img_index/phim10.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim11.jpeg" />
+              <img class="reflection" src="/image/img_index/phim11.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim12.jpeg" />
+              <img class="reflection" src="/image/img_index/phim12.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim13.jpeg" />
+              <img class="reflection" src="/image/img_index/phim13.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim14.jpeg" />
+              <img class="reflection" src="/image/img_index/phim14.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim15.jpeg" />
+              <img class="reflection" src="/image/img_index/phim15.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim16.jpeg" />
+              <img class="reflection" src="/image/img_index/phim16.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim17.jpeg" />
+              <img class="reflection" src="/image/img_index/phim17.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim18.jpeg" />
+              <img class="reflection" src="/image/img_index/phim18.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim19.jpeg" />
+              <img class="reflection" src="/image/img_index/phim19.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+            <div class="swiper-slide swiper-slide-tablet">
+              <img src="/image/img_index/phim20.jpeg" />
+              <img class="reflection" src="/image/img_index/phim20.jpeg" />
+              <p class="text-light font-bold text-center">TRÒ CHƠI NHÂN TÍNH-T16</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!--End:PhimDangChieuTablet-->
+        <!--Begin::PhimDangChieu-->
+        <div class="d-none d-xxl-flex justify-content-between align-items-center">
+          <div class="d-flex flex-wrap align-items-center">
+            <div class="rounded-circle bg-danger" style="width: 20px; height: 20px;"></div>
+            <h4 class="mb-0 ms-2">Phim đang chiếu</h4>
+          </div>
+          <a href="#" class="text-light">xem tất cả</a>
+        </div>
+        <div class="d-none d-xxl-flex flex-wrap gap-x-2rem gap-y-1rem mt-3 pb-5">
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim01.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                <p class="mb-0">01/11/2024</p>
+              </div>
+              <h6 class="card-text font-bold">NGÀY XƯA CÓ MỘT CHUYỆN TÌNH - T16</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim02.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0 me-2">Khoa học viễn tưởng</p>
+                <p class="mb-0">25/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">VENOM: THE LAST DANCE-T13</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim03.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Kinh dị</p>
+                <p class="mb-0">25/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">TRÒ CHƠI NHÂN TÍNH-T16</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim04.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Kinh dị</p>
+                <p class="mb-0">25/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">ÁC QUỶ TRUY HỒN-T18</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim05.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Hài, Tâm lý, tình cảm</p>
+                <p class="mb-0">25/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">BIỆT ĐỘI HOT GIRL-T16</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim06.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Hoạt hình</p>
+                <p class="mb-0">25/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">ELLI VÀ BÍ ẨN CHIẾC TÀU MA-K - Lồng tiếng</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim07.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Hoạt hình</p>
+                <p class="mb-0">25/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">ELLI VÀ BÍ ẨN CHIẾC TÀU MA-K - Lồng tiếng ( Suất chiếu đặc biệt )</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim08.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Kinh dị</p>
+                <p class="mb-0">18/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">TEE YOD: QUỶ ĂN TẠNG PHẦN 2-T18</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim09.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0"></p>
+                <p class="mb-0">18/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">TÍN HIỆU CẦU CỨU-T18</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim10.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                <p class="mb-0">18/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">CÔ DÂU HÀO MÔN- T18</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim11.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Khoa học viễn tưởng</p>
+                <p class="mb-0">11/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">ROBOT HOANG DÃ-P - Lồng tiếng</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim12.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Kinh dị, Tâm lý, tình cảm, Nhạc kịch</p>
+                <p class="mb-0">04/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">JOKER: FOLIE À DEUX ĐIÊN CÓ ĐÔI-T18</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim13.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0"></p>
+                <p class="mb-0">04/10/2024</p>
+              </div>
+              <h6 class="card-text font-bold">MỘ ĐOM ĐÓM-K ( Phụ đề )</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim14.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Hành động</p>
+                <p class="mb-0">27/09/2024</p>
+              </div>
+              <h6 class="card-text font-bold">TRANSFORMERS MỘT-T13 ( Phụ đề )</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim15.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Hoạt hình</p>
+                <p class="mb-0">27/09/2024</p>
+              </div>
+              <h6 class="card-text font-bold">CẬU BÉ CÁ HEO-P - Lồng tiếng</h6>
+            </div>
+          </div>
+          <!--End::card-->
+          <!--Begin::card-->
+          <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+            <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+              <img src="/image/img_index/phim16.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                alt="...">
+            </div>
+            <div class="card-body ps-0 pt-1 pe-2">
+              <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                <p class="me-2 mb-0">Hành động</p>
+                <p class="mb-0">27/09/2024</p>
+              </div>
+              <h6 class="card-text font-bold">ĐỐ ANH CÒNG ĐƯỢC TÔI - T18</h6>
+            </div>
+          </div>
+          <!--End::card-->
+        </div>
+        <!--End::PhimDangChieu-->
+        <hr class="d-none d-xxl-block" />
+        <!--Begin::PhimSapChieu-->
+        <div class="bg-div-primary">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-wrap align-items-center">
+              <div class="rounded-circle bg-danger" style="width: 20px; height: 20px;"></div>
+              <h4 class="mb-0 ms-2">Phim sắp chiếu</h4>
+            </div>
+            <a href="#" class="text-light"></a>
+          </div>
+          <!--Begin::PhimSapChieuTablet-->
+          <div class="swiper swiperPhimSapChieuTablet mt-3 pb-2 d-xxl-none">
+            <div class="swiper-wrapper">
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim17.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim18.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim19.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim20.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim21.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim22.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim23.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+              <!--Begin::card-->
+              <div class="card bg-transparent shadow-sm cursor-pointer swiper-slide w-10rem w-lg-14rem">
+                <div class="rounded-1rem overflow-hidden h-lg-290px h-200px">
+                  <img src="/image/img_index/phim24.jpeg" class="h-100 w-100 cover" alt="...">
+                </div>
+                <div class="card-body px-0 text-center">
+                  <h6 class="card-text font-bold font-12 font-lg-14">VÂY HÃM TẠI ĐÀI BẮC</h6>
+                </div>
+              </div>
+              <!--End::card-->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!--End::PhimSapChieuTablet-->
+          <div class="d-none d-xxl-flex flex-wrap gap-x-2rem gap-y-1rem mt-3">
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim17.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0"></p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">VÂY HÃM TẠI ĐÀI BẮC</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim01.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">NGÀY XƯA CÓ MỘT CHUYỆN TÌNH - T16</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim18.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Kinh dị</p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">TIẾNG GỌI CỦA OÁN HỒN</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim19.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Kinh dị</p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">VÙNG ĐẤT BỊ NGUYỀN RỦA-T18</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim20.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Kinh dị</p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">THẦN DƯỢC</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim21.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">THIÊN ĐƯỜNG QUẢ BÁO</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim22.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0"></p>
+                  <p class="mb-0">01/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">TIÊN TRI TỬ THẦN</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim23.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Kinh dị</p>
+                  <p class="mb-0">08/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">AI OÁN TRONG VƯỜN XUÂN</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim24.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                  <p class="mb-0">15/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">NGÀY TA ĐÃ YÊU</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim25.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">15/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">OZI: PHI VỤ RỪNG XANH</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim26.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                  <p class="mb-0">15/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">CU LI KHÔNG BAO GIỜ KHÓC</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim27.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hành động, Phiêu lưu, Tâm lý, tình cảm</p>
+                  <p class="mb-0">15/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">VÕ SĨ GIÁC ĐẤU II</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim28.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hành động</p>
+                  <p class="mb-0">15/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">MẬT MÃ ĐỎ</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim29.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0"></p>
+                  <p class="mb-0">22/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">LINH MIÊU</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim30.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Tâm lý, tình cảm</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">WICKED</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim31.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim32.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim33.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim34.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim35.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim36.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim37.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim38.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim39.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim40.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim41.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim42.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent col shadow-sm cursor-pointer" style="max-width: 14rem; min-width: 14rem;">
+              <div class="rounded-1rem bg-secondary overflow-hidden" style="height: 290px;">
+                <img src="/image/img_index/phim43.jpeg" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="me-2 mb-0">Hoạt hình</p>
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text font-bold">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+          </div>
+        </div>
+        <!--End::PhimSapChieu-->
+      </div>
+      <div class="w-100 w-xxl-20">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex flex-wrap align-items-center">
+            <h4 class="mb-0 ms-2">Khuyến mãi</h4>
+          </div>
+          <a href="#" class="text-light">xem tất cả</a>
+        </div>
+        <!--Begin::KhuyenMai-->
+        <div class="mt-3 d-none d-xxl-block" style="height: 370px;">
+          <div class="swiper swiperPhimSapChieu swiper-desktop">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!--End::KhuyenMai-->
+        <!--Begin::KhuyenMaiTablet-->
+        <div class="swiper swiperKhuyenMaiTablet mt-3 d-xxl-none">
+          <div class="swiper-wrapper">
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai1.jpeg"
+                  class="h-100 w-100 cover hover-img-scale transiton-img-scale" alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai1.jpeg"
+                  class="h-100 w-100 cover hover-img-scale transiton-img-scale" alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai2.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai2.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai3.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+          </div>
+        </div>
+        <!--End::KhuyenMaiTablet-->
+        <div class="d-flex justify-content-between align-items-center mt-5">
+          <div class="d-flex flex-wrap align-items-center">
+            <h4 class="mb-0 ms-2">Sự kiện</h4>
+          </div>
+          <a href="#" class="text-light">xem tất cả</a>
+        </div>
+        <!--Begin::SuKienTablet-->
+        <div class="swiper swiperSuKienTablet mt-3 d-xxl-none">
+          <div class="swiper-wrapper">
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai3.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai1.jpeg"
+                  class="h-100 w-100 cover hover-img-scale transiton-img-scale" alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai2.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai3.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+            <!--Begin::card-->
+            <div class="card bg-transparent cursor-pointer swiper-slide">
+              <div class="rounded-1rem overflow-hidden" style="height: 140px;">
+                <img src="/image/img_index/khuyenmai2.png" class="h-100 w-100 cover hover-img-scale transiton-img-scale"
+                  alt="...">
+              </div>
+              <div class="card-body ps-0 pt-1 pe-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center font-thin mb-1 text-secondary">
+                  <p class="mb-0">29/11/2024</p>
+                </div>
+                <h6 class="card-text">HÀNH TRÌNH CỦA MOANA 2</h6>
+              </div>
+            </div>
+            <!--End::card-->
+          </div>
+        </div>
+        <!--End::SuKienTablet-->
+        <!--Begin::SuKien-->
+        <div class="mt-3 d-none d-xxl-block" style="height: 370px;">
+          <div class="swiper swiper-desktop swiperSuKien">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide overflow-hidden"><a href="#"><img src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+              <div class="swiper-slide swiper-slide-desktop overflow-hidden"><a href="#"><img
+                    src="/image/img_index/banner1.jpeg"
+                    class="cover w-100 h-100 transiton-img-scale hover-img-scale"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!--End::SuKien-->
+
+        <div class="d-flex flex-column gap-4 mt-4">
+          <div class="rounded-1rem overflow-hidden"><a href="#"><img src="/image/img_index/khuyenmai1.jpeg"
+                class="cover w-100 h-100"></a></div>
+          <div class="rounded-1rem  overflow-hidden"><a href="#"><img src="/image/img_index/khuyenmai2.png"
+                class="cover w-100 h-100"></a></div>
+          <div class="rounded-1rem overflow-hidden"><a href="#"><img src="/image/img_index/khuyenmai3.png"
+                class="cover w-100 h-100"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End::Body-->
+
+  <footer class="footer text-white footer-background">
+    <div class="container text-center">
+      <div class="row mb-3 ">
+        <div class="col-12 mt-4 ">
+          <ul class="list-inline navbar-ul">
+            <li class="list-inline-item mx-4"><a href="#">Chính sách</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Lịch chiếu</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Tin tức</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Giá vé</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Hỏi đáp</a></li>
+            <li class="list-inline-item mx-4"><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-12 social-icons">
+          <a href="#" class="mx-2"><img src="../image/icons/face.png" alt="Facebook"></a>
+          <a href="#" class="mx-2"><img src="../image/icons/zalo.png" alt="Zalo"></a>
+          <a href="#" class="mx-2"><img src="../image/icons/youtobe.png" alt="YouTube"></a>
+          <a href="#" class="mx-4"><img class="image-social" src="../image/icons/chplay.png" alt="Google Play"></a>
+          <a href="#" class="mx-1"><img class="image-social" src="../image/icons/appstore.png" alt="App Store"></a>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-12">
+          <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
+          <p>Bản quyền thuộc Trung tâm Chiếu phim Quốc gia</p>
+          <p>Giấy phép số: 224/GP-TTĐT ngày 31/8/2010 - Chịu trách nhiệm: Vũ Đức Tùng - Giám đốc</p>
+          <p>Địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội - Điện thoại: 024.35141791</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright 2023. NCC All Rights Reserved. Dev by Anvui.vn</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/vendor/boostrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/swiper/js/swiper-bundle.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
