@@ -8,12 +8,11 @@ Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trì
 
 ## 🏆 **Dự án nổi bật**  
 
-### 1️⃣ **Restaurant Management System 🍽️**  
-📌 **Mô tả**: Hệ thống quản lý nhà hàng, hỗ trợ quản lý thực đơn, hóa đơn, báo cáo doanh thu.  
-🛠 **Công nghệ**: Java, MySQL, JFreeChart, Swing  
+### 1️⃣ **Xây dựng Website xem phim tích hợp Framework Front-End 🎞**  
+📌 **Mô tả**: Thiết kế giao diện website quảng bá, đặt lịch, xem thông tin về rạp chiếu phim NCC  
+🛠 **Công nghệ**: HTML, CSS, SCSS, JavaScript, Bootstrap 5, Swiper
 🔗 **[Xem repo](https://github.com/yourusername/restaurant-management)**  
-
-![Restaurant Management Demo](images/restaurant-demo.png)  
+🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/kZNC9iPoyG0)  
 
 ---
 
