@@ -1,0 +1,47 @@
+@import  "@assets/styles/variables.scss";
+
+.container {
+  padding: 24px 0px;
+  .colLeft {
+    border-right: 1px solid $color-black-25;
+    .title3 {
+      font-family: "Barlow" , sans-serif;
+      margin-bottom: 24px;
+      color: $color-bright-blue;
+    }
+
+    .title5 {
+      font-family: "Barlow" , sans-serif;
+      margin-top: 20px;
+    }
+
+    .description {
+      font-family: "Barlow" , sans-serif;
+    }
+  }
+
+  .colRight {
+    padding: 16px;
+    border-radius: 8px;
+
+    .title5 {
+      font-family: "Barlow" , sans-serif;
+      margin: 16px 0 8px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .text {
+      font-family: "Barlow" , sans-serif;
+      margin-bottom: 8px;
+    }
+
+    .link {
+      font-family: "Barlow" , sans-serif;
+      display: block;
+      margin-top: 16px;
+    }
+  }
+}

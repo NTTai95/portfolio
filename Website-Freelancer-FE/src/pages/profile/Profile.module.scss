@@ -1,0 +1,13 @@
+@import '@assets/styles/variables';
+
+.tag{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.col3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

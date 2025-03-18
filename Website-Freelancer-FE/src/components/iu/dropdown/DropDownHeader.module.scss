@@ -1,0 +1,19 @@
+.title {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  &:hover {
+    filter: brightness(2);
+  }
+}
+
+.fullName{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 5px;
+    font-family: "rasa", sans-serif;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

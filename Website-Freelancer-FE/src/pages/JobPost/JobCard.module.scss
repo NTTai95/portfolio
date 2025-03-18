@@ -1,0 +1,85 @@
+@import "@assets/styles/variables";
+
+.card {
+  font-family: "Barlow", serif;
+  box-shadow: 0px 0px 5px 2px $color-black-10;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2%;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #4be1ec, #cb5eee); /* Gradient màu */
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .avatar {
+      cursor: pointer;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      .title {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+        color: $color-bright-blue;
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+      .text2 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 16px;
+        .name {
+          font-weight: 400;
+          cursor: pointer;
+          &:hover {
+            filter: brightness(3);
+            text-decoration: underline;
+          }
+        }
+        .day {
+          font-style: italic;
+          color: $color-black-50;
+        }
+      }
+    }
+  }
+
+  .context {
+    div {
+      .bold {
+        font-weight: 600;
+      }
+    }
+    .description {
+      .thin {
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Giới hạn số dòng */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal; /* Tránh lỗi hiển thị */
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}

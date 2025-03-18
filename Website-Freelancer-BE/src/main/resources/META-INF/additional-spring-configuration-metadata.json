@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "cloudinary.cloud-name",
+    "type": "java.lang.String",
+    "description": "Tên cloud lưu trữ hình ảnh"
+  },
+  {
+    "name": "cloudinary.api-key",
+    "type": "java.lang.String",
+    "description": "api-key cloud lưu trữ hình ảnh"
+  },
+  {
+    "name": "cloudinary.api-secret",
+    "type": "java.lang.String",
+    "description": "api-secret cloud lưu trữ hình ảnh"
+  },
+  {
+    "name": "spring.jpa.hibernate.dialect",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.dialect'"
+  }
+]}

@@ -1,0 +1,127 @@
+@import "@assets/styles/variables";
+@import "@fontsource/rasa/index.css";
+@import "@fontsource/bebas-neue/index.css";
+
+.formLogin {
+  font-family: "rasa", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  .base {
+    display: block;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+      h4 {
+        font-weight: bolder;
+      }
+    }
+    .text-right {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        text-decoration: none;
+        color: $color-black-50;
+        font-weight: 900;
+        font-size: 17px;
+        &:hover {
+          color: $color-black-75;
+        }
+      }
+    }
+  }
+}
+
+.mb40px {
+  margin-bottom: 40px;
+}
+
+.mb30px {
+  margin-bottom: 30px;
+}
+
+.mb15px {
+  margin-bottom: 15px;
+}
+
+.card {
+  height: 80vh;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.bgLogin {
+  background: linear-gradient(to bottom, $color-soft-blue, $color-deep-blue);
+  height: 100%;
+  font-family: "rasa", sans-serif;
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    span {
+      margin-top: 50px;
+      font-family: "bebas-neue", sans-serif;
+      font-weight: bolder;
+      font-size: 40px;
+      color: white;
+    }
+  }
+  .welcome {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    z-index: 1;
+    color: white;
+    padding: 0px 80px;
+    margin-top: 15px;
+    span {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+  }
+  .gif {
+    position: absolute;
+    bottom: 0;
+    .img1 {
+      width: 100%;
+      height: 100%;
+      transform: scale(1.1);
+    }
+    .img2 {
+      width: 100%;
+      height: 100%;
+      clip-path: inset(2px 0 2px 0);
+      transform: scale(0.9);
+    }
+  }
+  .buttonChat {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+.font-rasa {
+  font-family: "rasa", sans-serif;
+}
+
+.btnAuthentication {
+  font-size: 17px;
+  font-weight: bolder;
+  font-family: "rasa", sans-serif;
+  &:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.1);
+  }
+  transition: all 0.3s ease;
+}
+
+.checkbox {
+  font-family: "rasa", sans-serif;
+  font-size: 17px;
+}

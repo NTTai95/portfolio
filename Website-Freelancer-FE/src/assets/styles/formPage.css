@@ -1,0 +1,22 @@
+/* Progress Bar */
+.progress-bar-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .step {
+    text-align: center;
+    flex: 1;
+    padding: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    color: #6c757d;
+  }
+  
+  .step.completed {
+    background-color: #81d742;
+    color: white;
+    font-weight: bold;
+  }
+  

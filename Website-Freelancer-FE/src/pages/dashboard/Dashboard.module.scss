@@ -1,0 +1,14 @@
+@import '@assets/styles/variables.scss';
+
+.w-250px{
+    width: 250px;
+}
+
+.h-100vh{
+    height:  100vh;
+}
+
+.border-top-3{
+    border-top: solid 5px $color-bright-blue !important;
+}
+

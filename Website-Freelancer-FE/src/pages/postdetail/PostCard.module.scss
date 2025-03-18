@@ -1,0 +1,157 @@
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 16px;
+        .headerLeft {
+            display: flex;
+            align-items: flex-start;
+            .avatar {
+                cursor: pointer;
+                margin-right: 12px;
+                border: 1px solid #f0f0f0;
+                &:hover {
+                    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+                }
+            }
+            .text {
+                display: flex;
+                flex-direction: column;
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #222;
+                    margin-bottom: 6px;
+                    cursor: pointer;
+                    &:hover {
+                        color: #1890ff;
+                    }
+                }
+                .textMeta {
+                    display: flex;
+                    align-items: center;
+                    .name {
+                        font-size: 14px;
+                        color: #1890ff;
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .dot {
+                        margin: 0 6px;
+                        color: #bbb;
+                    }
+                    .day {
+                        font-size: 14px;
+                        color: #888;
+                    }
+                }
+            }
+        }
+        .badge {
+            margin-left: 8px;
+        }
+    }
+    .content {
+        margin-bottom: 16px;
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+            .infoItem {
+                display: flex;
+                align-items: center;
+                margin-right: 24px;
+                margin-bottom: 8px;
+                .icon {
+                    color: #1890ff;
+                    margin-right: 6px;
+                    font-size: 16px;
+                }
+                .label {
+                    font-weight: 500;
+                    color: #555;
+                    margin-right: 4px;
+                }
+                .value {
+                    color: #222;
+                }
+            }
+        }
+        .description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+            p {
+                margin: 0;
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-right: 16px;
+            @media (max-width: 576px) {
+                margin-bottom: 12px;
+            }
+        }
+        .applyButton {
+            min-width: 100px;
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.cardSkeleton {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.skeletonTags {
+    display: flex;
+    gap: 8px;
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+    .card {
+        .header {
+            flex-direction: column;
+            .badge {
+                margin-left: 0;
+                margin-top: 12px;
+            }
+        }
+        .footer {
+            flex-direction: column;
+            align-items: flex-start;
+            .skills {
+                margin-bottom: 12px;
+                margin-right: 0;
+            }
+        }
+    }
+}

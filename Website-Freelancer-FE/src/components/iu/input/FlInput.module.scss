@@ -1,0 +1,69 @@
+@import "@assets/styles/variables";
+
+.flInput {
+  display: flex;
+  border-bottom: 2px solid $color-black-50;
+  .floating-icon {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid $color-black-50;
+    margin-bottom: 5px;
+    padding: 0px 14px;
+    font-size: 24px;
+  }
+  .floating-label-input {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 5px;
+    width: 100%;
+    label {
+      position: absolute;
+      top: 10%;
+      transform: translateY(-50%);
+      color: $color-black-50;
+      font-size: 14px;
+      font-weight: bold;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      &.focused {
+        top: -7px;
+      }
+    }
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+  }
+}
+
+.togglePassword {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+  .icon {
+    font-size: 24px;
+    color: $color-black-50;
+  }
+  &:hover {
+    .icon {
+      color: $color-black-75 !important;
+    }
+  }
+}
+
+.error-text {
+  min-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $color-rose-red;
+}
+
+.calendar{
+  
+}
+

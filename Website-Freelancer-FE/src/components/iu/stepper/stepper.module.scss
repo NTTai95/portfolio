@@ -1,0 +1,19 @@
+@import "@assets/styles/variables";
+
+.containerStepper {
+  margin-top: 30px;
+  border-top: 1px solid $color-black-25;
+  border-bottom: 1px solid $color-black-25;
+  padding: 20px 0px;
+  font-family: "Barlow", sans-serif;
+}
+
+.prev{
+  margin-right: 10px;
+  font-family: "Barlow", sans-serif;
+}
+
+.next{
+  margin-left: 10px;
+  font-family: "Barlow", sans-serif;
+}

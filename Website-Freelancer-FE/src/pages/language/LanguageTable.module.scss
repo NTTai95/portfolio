@@ -1,0 +1,38 @@
+.skillTable {
+  table {
+    th {
+      background-color: #f9f9f9;
+    }
+
+    td {
+      vertical-align: middle;
+    }
+
+    // Nút chỉnh sửa
+    button {
+      color: blue;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    // Cố định chiều cao cho bảng và các hàng trống
+    .emptyRow {
+      height: 50px; // Đặt chiều cao cố định cho hàng trống
+    }
+  }
+
+  // Đảm bảo bảng có chiều cao tối thiểu cố định
+  min-height: 400px; // Chiều cao tối thiểu cho toàn bảng (bao gồm tiêu đề và nội dung)
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  white-space: nowrap;
+  max-width: 65vw;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}

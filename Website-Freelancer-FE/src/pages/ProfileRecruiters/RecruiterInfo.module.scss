@@ -1,0 +1,29 @@
+@import "@assets/styles/variables";
+
+.container{
+    font-family: 'Barlow', sans-serif;
+    padding-right: 10%;
+    .part{
+        .title{
+            font-family: 'Barlow', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: $color-bright-blue;
+        }
+        .text{
+            font-family: 'Barlow', sans-serif;
+            font-size: 16px;
+        }
+        .tag{
+            font-family: 'Barlow', sans-serif;
+            font-family: "Barlow", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 5px 8px;
+        }
+    }
+}
+
+.barlow{
+    font-family: "Barlow", sans-serif;
+}

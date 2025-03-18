@@ -1,0 +1,29 @@
+.alert {
+  margin-bottom: 10px;
+}
+
+.result {
+  padding-top: 130px;
+  font-family: "Barlow", sans-serif;
+
+  .icon{
+    font-size: 100px !important;
+  }
+
+  .btn{
+    font-family: "Barlow", sans-serif;
+    font-size: 20px;
+    padding: 20px 10px;
+    font-weight: 500;
+  }
+
+  :global {
+    .ant-result-title {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .ant-result-subtitle {
+      font-size: 20px;
+    }
+  }
+}

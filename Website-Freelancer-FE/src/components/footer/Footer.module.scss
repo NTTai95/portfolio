@@ -1,0 +1,87 @@
+@import '@assets/styles/variables.scss';
+.footer_area {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding: 60px;
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 25px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -25px;
+    }
+    .col {
+        padding: 25px;
+        flex: 1;
+        &.colLg4 {
+            flex: 0 0 33.333%;
+        }
+        .logo {
+            font-size: 25px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+    .single_footer_widget {
+        position: relative;
+        z-index: 1;
+        .widget_title {
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .footer_menu {
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    margin-bottom: 1rem;
+                    a {
+                        color: #747794;
+                        text-decoration: none;
+                        &:hover,
+                        &:focus {
+                            color: #3f43fd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_social_area {
+        a {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            background-color: #f5f5ff;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            &:hover,
+            &:focus {
+                color: #fff;
+                background-color: #3f43fd;
+            }
+            i {
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+.copywrite_text {
+    a {
+        color: $color-black-50;
+        text-decoration: none;
+        margin-left: 5px;
+        &:hover {
+            color: #3f43fd;
+        }
+    }
+}

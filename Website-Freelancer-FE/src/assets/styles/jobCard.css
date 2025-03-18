@@ -1,0 +1,30 @@
+.job-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .job-card .card-text {
+    font-size: 0.95rem;
+  }
+  
+  .job-card .apply-btn {
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .job-card .badge {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+  }
+  
