@@ -3,4 +3,3 @@
 🛠 **Công nghệ**: HTML, SCSS, JavaScript, GitHub, Boostrap 5, Swiper  
 🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/DAX-Movie-Website)**  
 🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/kZNC9iPoyG0) 
-## Chứng nhận
