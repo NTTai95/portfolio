@@ -1,4 +1,4 @@
-🚀 My Portfolio - Java Developer  
+#🚀 **My Portfolio - Java Developer**  
 
 Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trình viên backend đam mê công nghệ, đặc biệt quan tâm đến các hệ thống hiệu suất cao và trí tuệ nhân tạo. Dưới đây là những dự án nổi bật mà tôi đã hoàn thành.  
 
