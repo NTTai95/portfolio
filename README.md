@@ -1,4 +1,4 @@
-# 🚀 My Portfolio - Backend Developer  
+![image](https://github.com/user-attachments/assets/899954e5-43cb-4618-8a67-e522e81d5d0f)# 🚀 My Portfolio - Backend Developer  
 
 Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trình viên backend đam mê công nghệ, đặc biệt quan tâm đến các hệ thống hiệu suất cao và trí tuệ nhân tạo. Dưới đây là những dự án nổi bật mà tôi đã hoàn thành.  
 
@@ -8,16 +8,17 @@ Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trì
 
 ## 🏆 **Dự án nổi bật**  
 
-### 1️⃣ **Xây dựng Website xem phim tích hợp Framework Front-End 🎞**  
-📌 **Mô tả**: Thiết kế giao diện website quảng bá, đặt lịch, xem thông tin về rạp chiếu phim NCC  
-🛠 **Công nghệ**: HTML, CSS, SCSS, JavaScript, Bootstrap 5, Swiper
-🔗 **[Xem repo](https://github.com/yourusername/restaurant-management)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/kZNC9iPoyG0)  
+### 1️⃣ **Website nền tảng việc làm Freelancer 🎞**  
+📌 **Mô tả**: Website nền tảng việc làm Freelancer là cầu nối giữa người lao động tự do (freelancer) và các doanh nghiệp, cá nhân có nhu cầu thuê dịch vụ. Trên nền tảng này, freelancer có thể tìm kiếm công việc phù hợp với kỹ năng của mình, trong khi khách hàng dễ dàng thuê nhân sự cho các dự án ngắn hạn hoặc dài hạn.  
+🛠 **Công nghệ**: Java, SpringBoost, ReactJS, VNPAY API, Gemini API, Ant Design
+🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/Website-Freelancer)**  
+🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/aq5XNjXbj0s)  
 
 ---
 
-### 2️⃣ **AI Chatbot for Customer Reviews 🤖**  
-📌 **Mô tả**: Chatbot sử dụng AI để phân tích và phản hồi đánh giá khách hàng.  
+### 2️⃣ **Website hỏi đáp về CNTT - FPT IT ![image](https://github.com/user-attachments/assets/8f075083-e951-48d3-adb5-6f36ef8262b2)
+**  
+📌 **Mô tả**: FPT IT là website hỏi đáp về công nghệ thông tin, nơi người dùng có thể đặt câu hỏi và nhận câu trả lời từ cộng đồng chuyên gia, kỹ sư và những người đam mê CNTT. Nền tảng này hỗ trợ nhiều chủ đề như lập trình, bảo mật, mạng, phần mềm và phần cứng, giúp chia sẻ kiến thức và giải quyết vấn đề một cách nhanh chóng.  
 🛠 **Công nghệ**: Python, Flask, LangChain, FAISS  
 🔗 **[Xem repo](https://github.com/yourusername/ai-chatbot)**  
 
