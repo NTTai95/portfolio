@@ -1,8 +1,6 @@
-![image](https://github.com/user-attachments/assets/899954e5-43cb-4618-8a67-e522e81d5d0f)# 🚀 My Portfolio - Backend Developer  
+🚀 My Portfolio - Java Developer  
 
 Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trình viên backend đam mê công nghệ, đặc biệt quan tâm đến các hệ thống hiệu suất cao và trí tuệ nhân tạo. Dưới đây là những dự án nổi bật mà tôi đã hoàn thành.  
-
-📫 **Liên hệ**: [your.email@example.com](mailto:your.email@example.com) | [LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)  
 
 ---
 
@@ -37,25 +35,20 @@ Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trì
 📌 **Mô tả**: Website xem phim được xây dựng với HTML, SCSS, JavaScript, sử dụng Bootstrap 5 để tối ưu giao diện và Swiper để tạo hiệu ứng trượt mượt mà. Dự án được quản lý trên GitHub, giúp dễ dàng theo dõi và phát triển. Giao diện thân thiện, hỗ trợ đa nền tảng, mang lại trải nghiệm xem phim tốt nhất.  
 🛠 **Công nghệ**: HTML, SCSS, JavaScript, GitHub, Boostrap 5, Swiper  
 🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/DAX-Movie-Website)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/DVt-AaA_sTI) 
+🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/kZNC9iPoyG0) 
 
-## ⚡ **Kỹ năng & Công nghệ**  
+---
 
-| Backend  | Database  | DevOps & Tools |
-|----------|----------|----------------|
-| ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white) | ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
-| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
+### 5️⃣ **Thiết kế website trường THPT tương thích nhiều thiết bị ứng dụng Media Query Responsive Mobile 🏫**  
+📌 **Mô tả**: Dự án xây dựng và thiết kế website cho trường THPT với giao diện hiện đại, thân thiện và tương thích trên nhiều thiết bị nhờ Media Query Responsive Mobile. Sử dụng các công nghệ HTML, CSS, JavaScript, website đảm bảo hiển thị tốt trên cả máy tính, máy tính bảng và điện thoại, giúp học sinh, giáo viên và phụ huynh dễ dàng truy cập thông tin mọi lúc, mọi nơi.  
+🛠 **Công nghệ**: HTML, SCSS, JavaScript, GitHub, Boostrap 5, Swiper  
+🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/Website-THPT)**  
+🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/dRNs1ph3f6Y) 
 
 ---
 
 ## 📬 **Liên hệ & Kết nối**  
 
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)  
-- 🔗 GitHub: [github.com/yourusername](https://github.com/yourusername)  
-- 🔗 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-
-💡 **Nếu bạn thích các dự án của tôi, đừng ngần ngại ⭐ các repo trên GitHub nhé!**  
-
----
-
-✨ **Cảm ơn bạn đã ghé thăm! Hy vọng chúng ta sẽ có cơ hội hợp tác trong tương lai.** 🚀  
+- 📧 Email: [nguyentantaivithanh@gmail.com](nguyentantaivithanh@gmail.com)  
+- 🔗 GitHub: [https://github.com/NTTai95](https://github.com/NTTai95)  
+- 📞 Điện thoại: 0379474608 
