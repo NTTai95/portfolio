@@ -4,4 +4,4 @@
 🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/Website-THPT)**  
 🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/dRNs1ph3f6Y) 
 ## Chứng nhận
-![PC09243_66697297fd7d1d0bad4c7712](https://github.com/user-attachments/assets/b86b65f1-b0f1-448c-ac74-bc837b129a81)
+![TJJPT](https://github.com/user-attachments/assets/d604f572-d050-4600-ad94-504188f0b642)
