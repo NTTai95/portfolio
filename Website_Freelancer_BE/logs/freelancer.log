@@ -1,0 +1,8 @@
+2025-06-04T21:25:21.468+07:00  WARN 32848 --- [Freelancer] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-04T21:25:22.688+07:00  WARN 32848 --- [Freelancer] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-04T21:25:22.719+07:00  WARN 32848 --- [Freelancer] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ab9e76cc-4865-4fca-943c-f77cb23c7de4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+

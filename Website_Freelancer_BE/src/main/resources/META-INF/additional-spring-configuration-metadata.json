@@ -1,0 +1,67 @@
+{"properties": [
+  {
+    "name": "cloudinary.cloud-name",
+    "type": "java.lang.String",
+    "description": "Tên cloud lưu trữ hình ảnh"
+  },
+  {
+    "name": "cloudinary.api-key",
+    "type": "java.lang.String",
+    "description": "api-key cloud lưu trữ hình ảnh"
+  },
+  {
+    "name": "cloudinary.api-secret",
+    "type": "java.lang.String",
+    "description": "api-secret cloud lưu trữ hình ảnh"
+  },
+  {
+    "name": "spring.jpa.hibernate.dialect",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.jpa.hibernate.dialect'"
+  },
+  {
+    "name": "jwt.expiration",
+    "type": "java.lang.String",
+    "description": "Thời hạn của token"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "Secret key để tạo ra token"
+  },
+  {
+    "name": "cloudfly.s3.endpoint",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.s3.endpoint'"
+  },
+  {
+    "name": "cloudfly.s3.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.s3.access-key'"
+  },
+  {
+    "name": "cloudfly.s3.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.s3.secret-key'"
+  },
+  {
+    "name": "cloudfly.bucket",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.bucket'"
+  },
+  {
+    "name": "cloudfly.endpoint",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.endpoint'"
+  },
+  {
+    "name": "cloudfly.access-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.access-key'"
+  },
+  {
+    "name": "cloudfly.secret-key",
+    "type": "java.lang.String",
+    "description": "A description for 'cloudfly.secret-key'"
+  }
+]}
