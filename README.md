@@ -128,8 +128,7 @@ Tất cả thành phần giao tiếp thông qua **RESTful APIs** được bảo 
 | **📝 Ứng tuyển & Đề xuất (Applies / Bids)** | Freelancer gửi đề xuất (bid) kèm giá, thời gian; employer xem danh sách ứng viên. |
 | **🏁 Milestones & Deliverables** | Chia project thành các milestone, quản lý nộp sản phẩm, xác nhận, trạng thái (funded, disputed, completed). |
 | **💳 Thanh toán & Lịch sử giao dịch** | Thanh toán theo milestone, nạp/rút tiền, lịch sử giao dịch và báo cáo số dư. |
-| **🤖 Trợ lý ảo (Course/AI assistant)** | Hỏi đáp tự động, gợi ý nội dung/đề xuất công việc/hỗ trợ người dùng bằng AI. |
-| **💬 Chat & Gửi file (Realtime)** | Chat 1:1 giữa Freelancer và Employer, hỗ trợ gửi file, ảnh; thông báo realtime. |
+| **💬 Chat (Realtime)** | Chat 1:1 giữa Freelancer và Employer; thông báo realtime. |
 | **🔔 Thông báo & Email** | Thông báo trạng thái job, milestone, thanh toán; gửi email thông báo quan trọng. |
 | **📄 Hồ sơ cá nhân & CV builder** | Freelancer quản lý hồ sơ, portfolio, bằng cấp, chứng chỉ, ngôn ngữ, kỹ năng. |
 | **⭐ Đánh giá & Review** | Sau hoàn thành job, hai bên có thể đánh giá và để lại review. |
