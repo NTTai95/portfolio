@@ -47,6 +47,7 @@ Bảng dưới đây liệt kê các công nghệ và thư viện chính đượ
 Sơ đồ dưới đây mô tả cách các thành phần trong hệ thống tương tác với nhau.
 
 ![Sơ đồ Kiến trúc Hệ thống](./architecture-diagram.png)
+<br/>
 *Mô tả ngắn: Nền tảng được xây dựng theo mô hình MVC (Model-View-Controller)*
 
 ---
