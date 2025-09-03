@@ -61,3 +61,6 @@ Sơ đồ dưới đây mô tả cách các thành phần trong hệ thống tư
     *   **Nguyễn Tấn Tài - Nhóm trưởng**
     *   Nguyễn Thị Ngọc Nghi
     *   Ngô Gia Huy
+*   **Chứng nhận:**
+---
+![Chứng nhận](./certification.png)
