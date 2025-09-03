@@ -11,7 +11,7 @@
 
 ## 📋 Tổng quan Dự án
 
-*   **Loại dự án:** Dự án xưởng
+*   **Loại dự án:** Dự án xưởng thực hành
 *   **Thời gian:** 09/2024 - 10/2024
 *   **Mô tả:** Dự án giải quyết bài toán quản lý thư viện truyền thống vốn thủ công, tốn nhiều thời gian và dễ sai sót trong việc theo dõi số lượng sách, tình trạng mượn trả và thông tin thành viên. Hệ thống được xây dựng nhằm tự động hóa các nghiệp vụ như phân loại, tra cứu, đăng ký, mượn trả, đồng thời cung cấp giao diện thân thiện giúp người dùng dễ dàng tiếp cận dịch vụ thư viện. Qua đó, dự án góp phần nâng cao hiệu quả làm việc của thủ thư và mang lại trải nghiệm thuận tiện, nhanh chóng cho người đọc.
 *   **Vai trò của tôi:**
