@@ -43,19 +43,19 @@ Bảng dưới đây liệt kê những công cụ và nền tảng chính đư�
 
 *   **Video Demo:** Toàn bộ luồng hoạt động của sản phẩm đã được ghi lại trong video này. **[Nhấn vào đây để xem!](https://youtu.be/DVt-AaA_sTI)**
 *   **Thành viên:**
-    1.   **Nguyễn Tấn Tài**
-    2.   Nguyễn Hoàng Duy
-    3.   Huỳnh Thụy Khả Tú
-    4.   Nguyễn Thị Ngọc Nghi
-    5.   Lê Tấn Vinh
-    6.   Nguyễn Hữu Trung
-    7.   Huỳnh Thị Thảo Vy
-    8.   Nguyễn An Ninh
-    9.   Hồ Long Hồ
-    10.   Trần Minh Tiến
-    11.   Nguyễn Triều Thiên
-    12.   Phạm Kim Tuấn
-    13.   Ngô Anh Văn
-    14.   Ngô Gia Huy
-    15.   Nguyễn Long Nhi
-    16.   Nguyễn Khánh Duy
+    *   **Nguyễn Tấn Tài**
+    *   Nguyễn Hoàng Duy
+    *   Huỳnh Thụy Khả Tú
+    *   Nguyễn Thị Ngọc Nghi
+    *   Lê Tấn Vinh
+    *   Nguyễn Hữu Trung
+    *   Huỳnh Thị Thảo Vy
+    *   Nguyễn An Ninh
+    *   Hồ Long Hồ
+    *   Trần Minh Tiến
+    *   Nguyễn Triều Thiên
+    *   Phạm Kim Tuấn
+    *   Ngô Anh Văn
+    *   Ngô Gia Huy
+    *   Nguyễn Long Nhi
+    *   Nguyễn Khánh Duy
