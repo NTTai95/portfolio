@@ -11,7 +11,7 @@
 
 ## 📋 Tổng quan Dự án
 
-*   **Loại dự án:** Dự án xưởng
+*   **Loại dự án:** Dự án xưởng thực hành
 *   **Thời gian:** 09/2024 - 10/2024
 *   **Mô tả:** Dự án giải quyết bài toán quản lý thư viện truyền thống vốn thủ công, tốn nhiều thời gian và dễ sai sót trong việc theo dõi số lượng sách, tình trạng mượn trả và thông tin thành viên. Hệ thống được xây dựng nhằm tự động hóa các nghiệp vụ như phân loại, tra cứu, đăng ký, mượn trả, đồng thời cung cấp giao diện thân thiện giúp người dùng dễ dàng tiếp cận dịch vụ thư viện. Qua đó, dự án góp phần nâng cao hiệu quả làm việc của thủ thư và mang lại trải nghiệm thuận tiện, nhanh chóng cho người đọc.
 *   **Vai trò của tôi:**
@@ -43,22 +43,22 @@ Bảng dưới đây liệt kê những công cụ và nền tảng chính đư�
 
 *   **Video Demo:** Toàn bộ luồng hoạt động của sản phẩm đã được ghi lại trong video này. **[Nhấn vào đây để xem!](https://youtu.be/DVt-AaA_sTI)**
 *   **Thành viên:**
-    1.   **Nguyễn Tấn Tài**
-    2.   Nguyễn Hoàng Duy
-    3.   Huỳnh Thụy Khả Tú
-    4.   Nguyễn Thị Ngọc Nghi
-    5.   Lê Tấn Vinh
-    6.   Nguyễn Hữu Trung
-    7.   Huỳnh Thị Thảo Vy
-    8.   Nguyễn An Ninh
-    9.   Hồ Long Hồ
-    10.   Trần Minh Tiến
-    11.   Nguyễn Triều Thiên
-    12.   Phạm Kim Tuấn
-    13.   Ngô Anh Văn
-    14.   Ngô Gia Huy
-    15.   Nguyễn Long Nhi
-    16.   Nguyễn Khánh Duy
+    *   **Nguyễn Tấn Tài**
+    *   Nguyễn Hoàng Duy
+    *   Huỳnh Thụy Khả Tú
+    *   Nguyễn Thị Ngọc Nghi
+    *   Lê Tấn Vinh
+    *   Nguyễn Hữu Trung
+    *   Huỳnh Thị Thảo Vy
+    *   Nguyễn An Ninh
+    *   Hồ Long Hồ
+    *   Trần Minh Tiến
+    *   Nguyễn Triều Thiên
+    *   Phạm Kim Tuấn
+    *   Ngô Anh Văn
+    *   Ngô Gia Huy
+    *   Nguyễn Long Nhi
+    *   Nguyễn Khánh Duy
 *   **Chứng nhận**
 ---
 ![Chứng nhận](./certification.jpg)
