@@ -59,3 +59,6 @@ Bảng dưới đây liệt kê những công cụ và nền tảng chính đư�
     14.   Ngô Gia Huy
     15.   Nguyễn Long Nhi
     16.   Nguyễn Khánh Duy
+*   **Chứng nhận**
+---
+![Chứng nhận](./certification.jpg)
