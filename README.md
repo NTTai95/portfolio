@@ -3,6 +3,8 @@
 [![Video Demo](https://img.shields.io/badge/Xem_Demo_Đầy_Đủ-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/1Lyc-CughZc)
 [![GitHub](https://img.shields.io/badge/Xem_Mã_Nguồn-181717?style=for-the-badge&logo=github)](https://github.com/NTTai95/portfolio/tree/FPT-IT)
 
+# FPT - IT
+
 **Dự án “Xây dựng Website hỏi đáp về CNTT - FPT IT” là một nền tảng hỏi đáp trực tuyến lấy cảm hứng từ StackOverflow, do tôi trực tiếp phát triển. Website cho phép người dùng quản lý kỹ năng, câu hỏi, câu trả lời, task, hệ thống like/dislike và điểm uy tín, được xây dựng theo mô hình MVC với Java Spring Boot, giao diện JSP, tích hợp Markdown và RichText để tối ưu trải nghiệm đăng tải nội dung chuyên nghiệp.**
 
 ![Banner dự án](./banner.png)
