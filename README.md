@@ -1,54 +1,68 @@
-# 🚀 **My Portfolio - Java Developer**  
+# 🚀 My Portfolio - Java & Full-Stack Developer
 
-Chào mừng đến với portfolio GitHub của tôi! Tôi là một lập trình viên backend đam mê công nghệ, đặc biệt quan tâm đến các hệ thống hiệu suất cao và trí tuệ nhân tạo. Dưới đây là những dự án nổi bật mà tôi đã hoàn thành.  
+Chào mừng đến với **portfolio GitHub** của tôi! Tôi là **Nguyễn Tấn Tài**, lập trình viên chuyên về **Java** với khả năng **Full-Stack Development**, đam mê xây dựng các hệ thống **hiệu suất cao** và các ứng dụng **trí tuệ nhân tạo (AI)**.  
 
----
+Tôi đã tham gia và hoàn thành nhiều dự án thực tế, bao gồm:
 
-## 🏆 **Dự án nổi bật**  
+- Hệ thống quản lý nhà hàng, website giáo dục, hệ thống hỏi đáp thông minh  
+- Ứng dụng hỗ trợ học tập, phân tích dữ liệu  
+- Website xem phim, nền tảng freelancer tích hợp AI  
 
-### 1️⃣ **Website nền tảng việc làm Freelancer 💼**  
-📌 **Mô tả**: Website nền tảng việc làm Freelancer là cầu nối giữa người lao động tự do (freelancer) và các doanh nghiệp, cá nhân có nhu cầu thuê dịch vụ. Trên nền tảng này, freelancer có thể tìm kiếm công việc phù hợp với kỹ năng của mình, trong khi khách hàng dễ dàng thuê nhân sự cho các dự án ngắn hạn hoặc dài hạn.  
-🛠 **Công nghệ**: Java, SpringBoost, ReactJS, VNPAY API, Gemini API, Ant Design
-🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/Website-Freelancer)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/aq5XNjXbj0s)  
+Tôi luôn **khao khát học hỏi công nghệ mới**, cải thiện kỹ năng lập trình và thử thách bản thân với những dự án phức tạp. Trên GitHub này, bạn sẽ thấy các dự án tôi **tự xây dựng** cũng như các thử nghiệm với **Java, Spring Boot, Docker, Python, Front-End Frameworks và AI**.  
 
----
-
-### 2️⃣ **Website hỏi đáp về CNTT - FPT IT 📖**
-**  
-📌 **Mô tả**: FPT IT là website hỏi đáp về công nghệ thông tin, nơi người dùng có thể đặt câu hỏi và nhận câu trả lời từ cộng đồng chuyên gia, kỹ sư và những người đam mê CNTT. Nền tảng này hỗ trợ nhiều chủ đề như lập trình, bảo mật, mạng, phần mềm và phần cứng, giúp chia sẻ kiến thức và giải quyết vấn đề một cách nhanh chóng.  
-🛠 **Công nghệ**: Java, JSP, Javascript, CSS  
-🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/FPT-IT)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/1Lyc-CughZc)  
+Tôi mong muốn **chia sẻ kiến thức, hợp tác cùng cộng đồng công nghệ** và không ngừng phát triển kỹ năng của mình.  
 
 ---
 
-### 3️⃣ **Thiết kế sơ đồ Use Case, Activity, ERD cho Hệ thống quản lý thư viện 📚**  
-📌 **Mô tả**: Thiết kế sơ đồ Use Case, Activity, ERD cho Hệ thống quản lý thư viện giúp mô tả chức năng, quy trình nghiệp vụ và mô hình dữ liệu, hỗ trợ phát triển hệ thống hiệu quả.  
-🛠 **Công nghệ**: Draw.io, Figma, Jira, ClickUp  
-🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/Library-Management-System)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/DVt-AaA_sTI) 
+## 🏆 Dự án Nổi bật
+
+### 1️⃣ Xây dựng nền tảng làm việc tự do tích hợp AI - Freelancer
+[![Video Demo](https://img.shields.io/badge/Xem_Demo_Đầy_Đủ-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/RmG17JJijjM)
+[![GitHub](https://img.shields.io/badge/Xem_Mã_Nguồn-181717?style=for-the-badge&logo=github)](https://github.com/NTTai95/portfolio/tree/Website_Freelancer)
+
+**Mô tả:** Nền tảng kết nối **doanh nghiệp** và **freelancer**, hỗ trợ tìm kiếm nhân sự, quản lý công việc, và tạo môi trường hợp tác minh bạch, hiệu quả.  
+**Vai trò:** `Trưởng nhóm & Lập trình viên Full-Stack` – Dẫn dắt nhóm 7 người, phát triển cả **Front-End, Back-End** và Mobile.  
 
 ---
 
-### 4️⃣ **Xây dựng Website xem phim tích hợp Framework Front-End 🎞️**  
-📌 **Mô tả**: Website xem phim được xây dựng với HTML, SCSS, JavaScript, sử dụng Bootstrap 5 để tối ưu giao diện và Swiper để tạo hiệu ứng trượt mượt mà. Dự án được quản lý trên GitHub, giúp dễ dàng theo dõi và phát triển. Giao diện thân thiện, hỗ trợ đa nền tảng, mang lại trải nghiệm xem phim tốt nhất.  
-🛠 **Công nghệ**: HTML, SCSS, JavaScript, GitHub, Boostrap 5, Swiper  
-🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/DAX-Movie-Website)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/kZNC9iPoyG0) 
+### 2️⃣ Website hỏi đáp CNTT - FPT IT
+[![Video Demo](https://img.shields.io/badge/Xem_Demo_Đầy_Đủ-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/1Lyc-CughZc)
+[![GitHub](https://img.shields.io/badge/Xem_Mã_Nguồn-181717?style=for-the-badge&logo=github)](https://github.com/NTTai95/portfolio/tree/FPT-IT)
+
+**Mô tả:** Nền tảng hỏi đáp trực tuyến lấy cảm hứng từ StackOverflow, quản lý câu hỏi, câu trả lời, task, hệ thống like/dislike, điểm uy tín, xây dựng bằng **Java Spring Boot**, **MVC**, giao diện JSP, tích hợp **Markdown & RichText**.  
+**Vai trò:** `Tác giả duy nhất` – Chịu trách nhiệm 100% toàn bộ dự án.  
 
 ---
 
-### 5️⃣ **Thiết kế website trường THPT tương thích nhiều thiết bị ứng dụng Media Query Responsive Mobile 🏫**  
-📌 **Mô tả**: Dự án xây dựng và thiết kế website cho trường THPT với giao diện hiện đại, thân thiện và tương thích trên nhiều thiết bị nhờ Media Query Responsive Mobile. Sử dụng các công nghệ HTML, CSS, JavaScript, website đảm bảo hiển thị tốt trên cả máy tính, máy tính bảng và điện thoại, giúp học sinh, giáo viên và phụ huynh dễ dàng truy cập thông tin mọi lúc, mọi nơi.  
-🛠 **Công nghệ**: HTML, SCSS, JavaScript, GitHub, Boostrap 5, Swiper  
-🔗 **[Xem repo](https://github.com/NTTai95/portfolio/tree/Website-THPT)**  
-🎥 **Demo**: [Xem video trên YouTube](https://youtu.be/dRNs1ph3f6Y) 
+### 3️⃣ Thiết kế sơ đồ Use Case, Activity, ERD - Hệ thống quản lý thư viện
+[![Video Demo](https://img.shields.io/badge/Xem_Demo_Đầy_Đủ-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/DVt-AaA_sTI)
+[![GitHub](https://img.shields.io/badge/Xem_Mã_Nguồn-181717?style=for-the-badge&logo=github)](https://github.com/NTTai95/portfolio/tree/Library-Management-System)
+
+**Mô tả:** Phân tích và mô hình hóa hệ thống thư viện, xây dựng **UML & ERD** để tối ưu quản lý sách, thành viên và mượn trả.  
+**Vai trò:** `Trưởng nhóm` – Phân công công việc, giám sát tiến độ và kiểm tra sản phẩm.  
 
 ---
 
-## 📬 **Liên hệ & Kết nối**  
+### 4️⃣ Website xem phim tích hợp Front-End Framework
+[![Video Demo](https://img.shields.io/badge/Xem_Demo_Đầy_Đủ-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/kZNC9iPoyG0)
+[![GitHub](https://img.shields.io/badge/Xem_Mã_Nguồn-181717?style=for-the-badge&logo=github)](https://github.com/NTTai95/portfolio/tree/DAX-Movie-Website)
 
-- 📧 Email: [nguyentantaivithanh@gmail.com](nguyentantaivithanh@gmail.com)  
+**Mô tả:** Website xem phim với **HTML, CSS/SCSS, Bootstrap 5, JavaScript, Swiper.js**, quản lý code trên GitHub, chạy trực tiếp bằng Live Server.  
+**Vai trò:** `Trưởng nhóm Front-End` – Quản lý, phân công công việc và định hướng kỹ thuật giao diện.  
+
+---
+
+### 5️⃣ Website trường THPT - Responsive & Media Query
+[![Video Demo](https://img.shields.io/badge/Xem_Demo_Đầy_Đủ-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/dRNs1ph3f6Y)
+[![GitHub](https://img.shields.io/badge/Xem_Mã_Nguồn-181717?style=for-the-badge&logo=github)](https://github.com/NTTai95/portfolio/tree/Website-THPT)
+
+**Mô tả:** Thiết kế website giới thiệu trường THPT với giao diện hiện đại, thân thiện, **Responsive trên nhiều thiết bị** bằng Media Query.  
+**Vai trò:** `Trưởng nhóm & Lập trình viên Front-End` – Phân công công việc, định hướng kỹ thuật và trực tiếp code các phần quan trọng: **Header, Trang chủ, Footer, Trang chính sách đào tạo**.  
+
+---
+
+## 📬 Liên hệ & Kết nối  
+
+- 📧 Email: [nguyentantaivithanh@gmail.com](mailto:nguyentantaivithanh@gmail.com)  
 - 🔗 GitHub: [https://github.com/NTTai95](https://github.com/NTTai95)  
-- 📞 Điện thoại: 0379474608 
+- 📞 Điện thoại/Zalo: 0379474608  
