@@ -5,7 +5,7 @@ type ParamValue = string | string[];
 
 const GEMINI_API_URL =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
-const GEMINI_API_KEY = "AIzaSyAFx5_9uZBNrUwRc5wtwvX4wBXPHkpS1cg";
+const GEMINI_API_KEY = "";
 
 /**
  * Gọi AI Gemini để sinh thư ứng tuyển
